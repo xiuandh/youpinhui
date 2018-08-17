@@ -1,0 +1,8 @@
+#过滤gulp的安装文件
+node_modules/
+#过滤所有的。zip文件
+*.zip
+#过滤src根目录下面的 images文件夹
+/src/images
+#过滤doc文件夹
+doc/
