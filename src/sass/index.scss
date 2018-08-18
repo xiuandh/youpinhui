@@ -238,3 +238,152 @@ $thirdColor:#f00;
 		}
 	}
 }
+.banner{
+	height:340px;
+	overflow:hidden;
+}
+.main{background:$mainColor;}
+%tv{font-size:24px;padding-left:10px;}
+.tv_h{
+	width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #444;
+    font-size: 16px;
+    li{
+    	&:first-child{
+	    	span:first-child{
+			    border-left:4px solid #f70800;
+			    font-size: 24px;
+    			color: #f70800;
+    			font-weight:800;
+	    	}
+	    	span:nth-child(2){
+	    		font-size: 24px;
+			    color: #222;
+			    margin-right: 5px;
+			    font-weight: 600;
+	    	}
+    	}
+    }
+
+}
+
+.tv_live{
+	padding:28px 60px 50px 60px;
+    background: #FFF;
+    border: 1px solid #ddd;
+    .tv_live_list{
+	    li{
+	    	float:left;
+	    	padding-right:14px;
+	    	padding-left:22px;
+	    	border-right:1px solid #ddd;
+	    	&:last-child{border-right:0 none;}
+	    	a{
+	    		display:block;
+	    		color:#333;
+	    		img{
+	    			width:420px;
+	    			height:240px;
+	    		}
+	    		p{
+	    			line-height:84px;
+	    			@extend %tv;
+	    		}
+	    		span{
+	    			@extend %tv;
+	    			padding-top:44px;
+	    			line-height:40px;
+	    			color:$thirdColor;
+	    		}
+	    	}
+	    }
+    }
+}
+
+/*今日限时购*/
+.day_dis{
+	li{
+		&:last-child{
+			font-size:$fontSize;
+			span{
+			    background: #000;
+			    color: #fff;
+			    width: 20px;
+			    font-size: 20px;
+			    height: 20px;
+			    padding: 2px;
+			    margin-right: 4px;
+			}
+		}
+	}
+}
+
+/*右侧固定栏*/
+%side{
+	position: fixed;
+    right: 0;
+    top: 0;
+}
+.sideout{
+	height: 100%;
+    border-right: 4px solid #222;
+    @extend %side;
+}
+.sidebar{
+	@extend %side;
+    width: 36px;
+    height: 100%;
+    ul{
+    	li{
+	    	height:36px;
+	    	width:36px;
+	    	background:#222;
+	    	color:$secondColor;
+	    	position:relative;
+	    	i{
+	    		display:block;
+	    		position:absolute;
+	    		font-size:20px;
+	    		top:8px;
+	    		left:8px;
+	    	}
+    	}
+    	&:first-child{
+    		position:fixed;
+    		right:0px;
+    		bottom:50%;
+    	}
+    	&:last-child{
+    		position:fixed;
+    		right:0px;
+    		bottom:0px;
+    		li:first-child{
+    			&:hover div{display:block;}
+	    		div{
+					display:none;
+					background:$secondColor;
+					position:absolute;
+					left:-120px;
+					top:-52px;
+					z-index:1;
+					text-align:center;
+					border:1px solid #ddd;
+					box-shadow:1px 1px #ddd,-1px -1px #ddd;
+					a{
+						display:block;
+						text-align:center;
+						line-height:30px;
+						color:$thirdColor;
+						p{
+							color:#222;
+							padding:0 6px;
+						}
+						img{padding:6px;}
+					}
+				}
+			}
+    	}
+    }
+}

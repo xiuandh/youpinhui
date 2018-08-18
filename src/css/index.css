@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #you { width: 100%; height: 100%; margin: 0; padding: 0; }
 
 .gps { height: 42px; border-bottom: 1px solid #ddd; background: #F6F6F6; }
@@ -77,3 +78,59 @@
 .nav .container li:hover { background-color: #d63a3a; }
 
 .nav .container li:hover .fllist { display: block; }
+
+.banner { height: 340px; overflow: hidden; }
+
+.main { background: #F6F6F6; }
+
+.tv_live .tv_live_list li a p, .tv_live .tv_live_list li a span { font-size: 24px; padding-left: 10px; }
+
+.tv_h { width: 100%; height: 50px; line-height: 50px; color: #444; font-size: 16px; }
+
+.tv_h li:first-child span:first-child { border-left: 4px solid #f70800; font-size: 24px; color: #f70800; font-weight: 800; }
+
+.tv_h li:first-child span:nth-child(2) { font-size: 24px; color: #222; margin-right: 5px; font-weight: 600; }
+
+.tv_live { padding: 28px 60px 50px 60px; background: #FFF; border: 1px solid #ddd; }
+
+.tv_live .tv_live_list li { float: left; padding-right: 14px; padding-left: 22px; border-right: 1px solid #ddd; }
+
+.tv_live .tv_live_list li:last-child { border-right: 0 none; }
+
+.tv_live .tv_live_list li a { display: block; color: #333; }
+
+.tv_live .tv_live_list li a img { width: 420px; height: 240px; }
+
+.tv_live .tv_live_list li a p { line-height: 84px; }
+
+.tv_live .tv_live_list li a span { padding-top: 44px; line-height: 40px; color: #f00; }
+
+/*今日限时购*/
+.day_dis li:last-child { font-size: 18px; }
+
+.day_dis li:last-child span { background: #000; color: #fff; width: 20px; font-size: 20px; height: 20px; padding: 2px; margin-right: 4px; }
+
+/*右侧固定栏*/
+.sideout, .sidebar { position: fixed; right: 0; top: 0; }
+
+.sideout { height: 100%; border-right: 4px solid #222; }
+
+.sidebar { width: 36px; height: 100%; }
+
+.sidebar ul li { height: 36px; width: 36px; background: #222; color: #fff; position: relative; }
+
+.sidebar ul li i { display: block; position: absolute; font-size: 20px; top: 8px; left: 8px; }
+
+.sidebar ul:first-child { position: fixed; right: 0px; bottom: 50%; }
+
+.sidebar ul:last-child { position: fixed; right: 0px; bottom: 0px; }
+
+.sidebar ul:last-child li:first-child:hover div { display: block; }
+
+.sidebar ul:last-child li:first-child div { display: none; background: #fff; position: absolute; left: -120px; top: -52px; z-index: 1; text-align: center; border: 1px solid #ddd; box-shadow: 1px 1px #ddd,-1px -1px #ddd; }
+
+.sidebar ul:last-child li:first-child div a { display: block; text-align: center; line-height: 30px; color: #f00; }
+
+.sidebar ul:last-child li:first-child div a p { color: #222; padding: 0 6px; }
+
+.sidebar ul:last-child li:first-child div a img { padding: 6px; }
