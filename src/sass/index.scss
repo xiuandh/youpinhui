@@ -1,0 +1,240 @@
+$fontSize:18px;
+$mainColor:#F6F6F6;
+$secondColor:#fff;
+$fontColor:#666;
+$thirdColor:#f00;
+#you{width:100%;height:100%;margin:0;padding:0;}
+
+#header .container{}
+.gps{
+	height:42px;border-bottom:1px solid #ddd;background:$mainColor;
+	.gps_l{
+		li{
+			float:left;
+			font-size:$fontSize;
+			line-height:42px;
+			a{
+				display:block;
+				color:$fontColor;
+			}
+		}
+	}
+}
+.gps_r{
+	@extend .gps_l;
+	li{
+		a{
+			span{
+				padding:0 10px;height:$fontSize;border-right:1px solid #666;
+			}
+		}
+		&:hover a{color:$thirdColor;}
+		&:last-child{
+			position:relative;
+			a{
+				padding-left:20px;
+				i{
+					position:absolute;
+					left:10px;
+					color:$thirdColor;
+					top:0px;
+				}
+				span{border-right:0 none}
+			}
+			&:hover{
+				div{display:block}
+			}
+			div{
+				display:none;
+				background:$secondColor;
+				position:absolute;
+				left:0px;
+				top:40px;
+				z-index:1;
+				border:1px solid #ddd;
+				box-shadow:1px 1px #ddd,-1px -1px #ddd;
+				a{
+					display:block;
+					color:$thirdColor;
+					i{
+						position:absolute;
+						left:56px;
+						top:-26px;
+					}
+				}
+			}
+		}
+	}
+}
+%logo{position: absolute;text-indent: -1000px;left: 0px;width:206px;}
+.logo{
+	height:100px;padding-top:39px;background:$secondColor;;
+	.logo_l{
+		position:relative;
+		width:432px;
+		height:70px;
+		h1{
+			@extend %logo;
+			background: url(../img/logo.png);
+			height:46px;
+		    top: 0px;
+		}
+		h2{
+			@extend %logo;
+			background: url(../img/logom.jpg);
+			height:30px;
+		    top: 46px;
+		}
+	}
+
+	.search{
+		.search_l{
+		    width: 326px;
+		    height: 24px;
+		    line-height: 32px;
+		    border: 4px solid $thirdColor;
+		    padding: 2px;
+		    padding-left: 15px;
+		    background: $secondColor;
+
+		    color: #999;
+		}
+		button{
+			height: 36px;
+		    width: 76px;
+		    background: $thirdColor;
+		    border: 0;
+		    padding: 0;
+		    color:$secondColor;
+		    cursor: pointer;
+		}
+	}
+
+	.car{
+		display: block;
+	    color: #222;
+	    width: 138px;
+	    height: 30px;
+	    line-height: 30px;
+	    position: relative;
+	    text-align: center;
+	    border: 1px solid #ddd;
+	    .car-bag{
+	    	width: 138px;
+		    height: 30px;
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		    text-align: center;
+		    .icon-buycar{
+		        display: block;
+			    position: absolute;
+			    left: 9px;
+			    top: 0px;
+			    color:$thirdColor;
+		    }
+		    .icon-arrow{
+		    	display: block;
+			    position: absolute;
+			    right: 6px;
+			    top: 0px;
+		    }
+		    a{
+		    	color:#222;
+		    	.carnum{
+		    		position: absolute;
+				    display: block;
+				    width: 18px;
+				    height: 16px;
+				    border-radius:50%;
+				    line-height: 14px;
+				    text-align: center;
+				    color: #fff;
+				    background:$thirdColor;
+				    overflow: hidden;
+				    right: 16px;
+				    top: -2px;
+		    	}
+		    }
+	    }
+
+	}
+}
+
+%navFont{
+	display: block;
+    padding: 0 20px;
+    line-height: 40px;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;height:40px;
+    font-weight: 700;
+}
+
+.nav{
+	background:$thirdColor;
+	.container{
+		position:relative;
+		li{
+			float:left;
+			a{
+				@extend %navFont;
+			}
+			&:last-child{
+				position: absolute;
+			    right: 0;
+			    top: 0;
+			    .fllist{
+			    	height: auto;
+				    width: 998px;
+				    display:none;
+				    padding-top: 1px;
+				    border: 1px solid #f70800;
+				    background-color: $secondColor;
+				    position:absolute;
+				    right:0px;
+				    top:40px;
+				    dl{
+				    	float:left;
+				    	padding-bottom:10px;
+				    	border-right: 1px solid #ddd;
+				    	dt{
+				    		a{
+								.icon-jewelry{
+									color:$thirdColor;
+									position:absolute;
+									left:8px;
+									top:0;
+								}
+					    		display:block;
+					    		position:relative;
+				    			color:#999;
+				    			padding:0 35px 0 34px;
+				    			height:42px;
+				    			line-height:42px;
+				    			font-size:$fontSize;
+				    			font-weight:1000;
+				    		    border-bottom: 1px dashed #ddd;
+				    		}
+				    	}
+				    	dd{
+				    		a{
+				    		display:block;
+			    			color:#eee;
+			    			padding:0 30px 0 30px;
+			    			height:30px;
+			    			line-height:30px;
+			    			font-size:16px;
+				    		}
+				    	}
+				    	&:last-child{border-right:0 none;}
+				    }
+			    }
+			}
+			&:hover{
+				background-color: #d63a3a;
+				.fllist{display:block;}
+			}
+		}
+	}
+}

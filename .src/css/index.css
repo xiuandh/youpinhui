@@ -1,0 +1,9 @@
+#header .container { height: 500px; background: #F6F6F6; }
+
+.gps { height: 42px; border-bottom: 1px solid #ddd; }
+
+.gps .gps_l li:first-child { margin-right: 24px; }
+
+.logo { height: 158px; }
+
+.nav { height: 60px; }

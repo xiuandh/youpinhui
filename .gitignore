@@ -6,3 +6,5 @@ node_modules/
 /src/images
 #过滤doc文件夹
 doc/
+
+.src/
