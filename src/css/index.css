@@ -110,6 +110,61 @@
 
 .day_dis li:last-child span { background: #000; color: #fff; width: 20px; font-size: 20px; height: 20px; padding: 2px; margin-right: 4px; }
 
+/*底部样式*/
+.footer { height: auto; text-align: center; padding: 0; background: none; font-family: "\5FAE\8F6F\96C5\9ED1",tahoma,arial,"\u5b8b\u4f53",sans-serif; -webkit-font-smoothing: subpixel-antialiased !important; padding-bottom: 90px; border-top: 1px solid #e3e3e3; /*第二栏*/ /*第三栏*/ }
+
+.footer .footad { height: 153px; }
+
+.footer .footad img { width: 100%; }
+
+.footer .webz { border-bottom: 1px solid #e6e6e6; padding: 26px 0 26px 75px; }
+
+.footer .webz .firstdl { width: 200px; height: 114px; padding-left: 42px; border-right: 1px dotted #e6e6e6; text-align: center; }
+
+.footer .webz .firstdl dt { color: #333; font-size: 16px; height: 26px; line-height: 26px; }
+
+.footer .webz .firstdl dd { height: 22px; line-height: 22px; }
+
+.footer .webz .nob { border: 0; }
+
+.footer .webz .firstdl2 { margin-left: 20px; }
+
+.footer .webz .firstdl2 dt { width: 80px; text-align: center; }
+
+.footer .webz .firstdl2 dt a { text-decoration: none; color: #222; outline: none; }
+
+.footer .webz .firstdl2 dt a em { color: #999; font-style: normal; }
+
+.footer .webz .firstdl2 dd { margin: 25px 0 0 25px; }
+
+.footer .footerinfo { padding-top: 22px; ine-height: 22px; text-align: center; }
+
+.footer .footerinfo .footer_list { height: 26px; color: #555; }
+
+.footer .footerinfo .footer_list a { color: #555; }
+
+.footer .footerinfo .footer_list a span { padding: 0 8px; font-size: 13px; border-right: 2px solid #222; }
+
+.footer .footerinfo .foot_link { width: 960px; margin: 0 auto; }
+
+.footer .footerinfo .foot_link .link_links { line-height: 22px; height: 22px; overflow: hidden; text-align: left; width: 900px; }
+
+.footer .footerinfo .foot_link .link_links em { padding-right: 8px; color: #666; }
+
+.footer .footerinfo .foot_link .link_links a { padding-right: 8px; color: #555; }
+
+.footer .footerinfo .foot_link i { position: fixed; bottom: 180px; right: 350px; color: #f00; }
+
+.footer .footerinfo .copyright { color: #555; line-height: 22px; }
+
+.footer .footerinfo .footer_b { margin: 0 auto; tex-align: center; }
+
+.footer .footerinfo .footer_b a { display: inline-block; text-decoration: none; height: 22px; line-height: 22px; }
+
+.footer .footerinfo .footer_b a p { margin: 0px 0px 0px 5px; color: #555; position: relative; }
+
+.footer .footerinfo .footer_b a p i { position: absolute; left: -18px; color: #f00; top: 0px; }
+
 /*右侧固定栏*/
 .sideout, .sidebar { position: fixed; right: 0; top: 0; }
 
@@ -120,6 +175,14 @@
 .sidebar ul li { height: 36px; width: 36px; background: #222; color: #fff; position: relative; }
 
 .sidebar ul li i { display: block; position: absolute; font-size: 20px; top: 8px; left: 8px; }
+
+.sidebar ul li:hover { background: #f00; }
+
+.sidebar ul li:hover .bat_side { display: block; }
+
+.sidebar ul li .bat_side { display: none; width: 90px; height: 36px; line-height: 36px; left: -89px; top: 0; background: #444; border-radius: 10px 0px 0px 10px; text-align: center; position: absolute; z-index: 1; }
+
+.sidebar ul li .bat_side a { color: #fff; }
 
 .sidebar ul:first-child { position: fixed; right: 0px; bottom: 50%; }
 
