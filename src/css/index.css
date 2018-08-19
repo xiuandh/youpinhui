@@ -3,7 +3,7 @@
 
 .gps { height: 42px; border-bottom: 1px solid #ddd; background: #F6F6F6; }
 
-.gps .gps_l li, .gps .gps_r li { float: left; font-size: 18px; line-height: 42px; }
+.gps .gps_l li, .gps .gps_r li { float: left; font-size: 18px; line-height: 43px; }
 
 .gps .gps_l li a, .gps .gps_r li a { display: block; color: #666; }
 

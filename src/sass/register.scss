@@ -1,0 +1,165 @@
+%aspan{
+    display: block;
+    height: 57px;
+    overflow: hidden;
+}
+.land{
+	width: 968px;
+    margin: 0 auto;
+    font: 12px '宋体';
+    padding-bottom: 50px;
+    img{
+        position: absolute;
+	    top: 152px;
+	    left: 50%;
+	    margin: 0 0 0 -628px;
+    }
+    .land_logo{
+        height: 112px;
+        .land_logo_img{
+            height: 57px;
+            margin-top: 31px;
+            a{
+                @extend %aspan;
+                width:185px;
+                background:url('img/logo.png')no-repeat;
+            }
+            .reglogo{
+                @extend %aspan;
+                width:168px;
+                background:url('img/register.gif')no-repeat 0 0;
+            }
+        }
+        .kefunum{
+            color: #525252;
+            padding-top: 70px;
+            a{
+                color: #0089cf;
+            }
+        }
+    }
+    .regnav{
+        height: 42px;
+        margin-top: 5px;
+        p{
+            background:orange;
+            border-radius:5px;
+            margin-right: 2px;
+            width: 225px;
+            height: 42px;
+            cursor: pointer;
+            line-height: 42px;
+            font-size: 14px;
+            color: #777777;
+            font-weight: 600;
+            text-align: center;
+        }
+        .regnav_tips{
+            margin-top:15px;
+            a{
+                color: #0089CF;
+            }
+            em{
+                font-size: 13px;
+                color: #eb0007;
+            }
+        }
+    }
+    .land_con{
+        border: 2px solid #ff8400;
+        width: 964px;
+        padding-top:45px;
+        .item{
+            height:52px;
+            label{
+                display: inline-block;
+                text-align: right;
+                width: 187px;
+                padding-right: 15px;
+                height: 37px;
+                line-height: 37px;
+                color: #666666;
+            }
+            input{
+                width: 314px;
+                height: 25px;
+                line-height: 25px;
+                padding: 5px 25px 5px 10px;
+                border: 1px solid #a2a2a2;
+            }
+        }
+        .item_code{
+            @extend %code;
+            .code_img{
+                width:89px;
+                height:30px;
+                margin: 3px 5px 0;
+            }
+            em{
+                line-height:35px;
+            }
+            a{
+                color: #0089cf;
+                line-height:35px;
+            }
+        }
+        .item_phonecode{
+           @extend %code;
+           .require_code{
+                width: 116px;
+                height: 26px;
+                border: none;
+                background:#ddd;
+                border-radius:2px;
+                cursor: pointer;
+                margin: 6px 0 0 10px;
+                display: inline-block;
+                line-height: 26px;
+                text-align: center;
+                color: #858585;
+           }
+        }
+        .item_box{
+            margin-left:210px;
+            height:40px;
+            input{
+                height: 13px;
+                margin-right: 4px;
+            }
+        }
+        .item_commit{
+            height:147px;
+            margin-left:210px;
+            .commit{
+                width: 126px;
+                height: 33px;
+                border: none;
+                background:#f00; 
+                color:#fff;
+                cursor: pointer;
+            }
+            .login_tips{
+                padding: 25px 0;
+                color: #888;
+                width: 351px;
+                line-height: 22px;
+                p{
+                    color: #666;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+%code{
+    height:44px;
+    input{
+        font: 15px Arial;
+        color: #222;
+        width: 102px;
+        padding: 5px 10px 5px 10px;
+        height: 25px;
+        line-height: 25px;
+        border: 1px solid #a2a2a2;
+    }
+}

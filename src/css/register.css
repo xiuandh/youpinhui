@@ -1,0 +1,60 @@
+@charset "UTF-8";
+.land .land_logo .land_logo_img a, .land .land_logo .land_logo_img .reglogo { display: block; height: 57px; overflow: hidden; }
+
+.land { width: 968px; margin: 0 auto; font: 12px '宋体'; padding-bottom: 50px; }
+
+.land img { position: absolute; top: 152px; left: 50%; margin: 0 0 0 -628px; }
+
+.land .land_logo { height: 112px; }
+
+.land .land_logo .land_logo_img { height: 57px; margin-top: 31px; }
+
+.land .land_logo .land_logo_img a { width: 185px; background: url("img/logo.png") no-repeat; }
+
+.land .land_logo .land_logo_img .reglogo { width: 168px; background: url("img/register.gif") no-repeat 0 0; }
+
+.land .land_logo .kefunum { color: #525252; padding-top: 70px; }
+
+.land .land_logo .kefunum a { color: #0089cf; }
+
+.land .regnav { height: 42px; margin-top: 5px; }
+
+.land .regnav p { background: orange; border-radius: 5px; margin-right: 2px; width: 225px; height: 42px; cursor: pointer; line-height: 42px; font-size: 14px; color: #777777; font-weight: 600; text-align: center; }
+
+.land .regnav .regnav_tips { margin-top: 15px; }
+
+.land .regnav .regnav_tips a { color: #0089CF; }
+
+.land .regnav .regnav_tips em { font-size: 13px; color: #eb0007; }
+
+.land .land_con { border: 2px solid #ff8400; width: 964px; padding-top: 45px; }
+
+.land .land_con .item { height: 52px; }
+
+.land .land_con .item label { display: inline-block; text-align: right; width: 187px; padding-right: 15px; height: 37px; line-height: 37px; color: #666666; }
+
+.land .land_con .item input { width: 314px; height: 25px; line-height: 25px; padding: 5px 25px 5px 10px; border: 1px solid #a2a2a2; }
+
+.land .land_con .item_code .code_img { width: 89px; height: 30px; margin: 3px 5px 0; }
+
+.land .land_con .item_code em { line-height: 35px; }
+
+.land .land_con .item_code a { color: #0089cf; line-height: 35px; }
+
+.land .land_con .item_phonecode .require_code { width: 116px; height: 26px; border: none; background: #ddd; border-radius: 2px; cursor: pointer; margin: 6px 0 0 10px; display: inline-block; line-height: 26px; text-align: center; color: #858585; }
+
+.land .land_con .item_box { margin-left: 210px; height: 40px; }
+
+.land .land_con .item_box input { height: 13px; margin-right: 4px; }
+
+.land .land_con .item_commit { height: 147px; margin-left: 210px; }
+
+.land .land_con .item_commit .commit { width: 126px; height: 33px; border: none; background: #f00; color: #fff; cursor: pointer; }
+
+.land .land_con .item_commit .login_tips { padding: 25px 0; color: #888; width: 351px; line-height: 22px; }
+
+.land .land_con .item_commit .login_tips p { color: #666; font-weight: 600; }
+
+.land .land_con .item_code, .land .land_con .item_phonecode { height: 44px; }
+
+.land .land_con .item_code input, .land .land_con .item_phonecode input { font: 15px Arial; color: #222; width: 102px; padding: 5px 10px 5px 10px; height: 25px; line-height: 25px; border: 1px solid #a2a2a2; }
