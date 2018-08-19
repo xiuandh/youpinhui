@@ -137,7 +137,7 @@
 
 .footer .webz .firstdl2 dd { margin: 25px 0 0 25px; }
 
-.footer .footerinfo { padding-top: 22px; ine-height: 22px; text-align: center; }
+.footer .footerinfo { padding-top: 22px; line-height: 22px; text-align: center; }
 
 .footer .footerinfo .footer_list { height: 26px; color: #555; }
 
@@ -145,7 +145,9 @@
 
 .footer .footerinfo .footer_list a span { padding: 0 8px; font-size: 13px; border-right: 2px solid #222; }
 
-.footer .footerinfo .foot_link { width: 960px; margin: 0 auto; }
+.footer .footerinfo .footer_list a:last-child span { border-right: 0 none; }
+
+.footer .footerinfo .foot_link { width: 960px; margin: 0 auto; position: relative; }
 
 .footer .footerinfo .foot_link .link_links { line-height: 22px; height: 22px; overflow: hidden; text-align: left; width: 900px; }
 
@@ -153,7 +155,7 @@
 
 .footer .footerinfo .foot_link .link_links a { padding-right: 8px; color: #555; }
 
-.footer .footerinfo .foot_link i { position: fixed; bottom: 180px; right: 350px; color: #f00; }
+.footer .footerinfo .foot_link i { position: absolute; bottom: 0px; right: 50px; color: #f00; }
 
 .footer .footerinfo .copyright { color: #555; line-height: 22px; }
 
@@ -194,7 +196,7 @@
 
 .sidebar ul:first-child li:first-child .side_login .side_login_sign { margin-top: 30px; display: block; }
 
-.sidebar ul:first-child li:first-child .side_login img { width: 74px; height: 74px; margin: 0 auto; display: block; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 37px; }
+.sidebar ul:first-child li:first-child .side_login .side_login_sign a { background: url(img/xiang.jpg); width: 74px; height: 74px; margin: 0 auto; display: block; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 37px; }
 
 .sidebar ul:first-child li:first-child .side_login .side_login_btn a { color: #f70800; padding: 6px; }
 
@@ -206,10 +208,8 @@
 
 .sidebar ul:last-child li:first-child:hover div { display: block; }
 
-.sidebar ul:last-child li:first-child div { display: none; background: #fff; position: absolute; left: -120px; top: -52px; z-index: 1; text-align: center; border: 1px solid #ddd; box-shadow: 1px 1px #ddd,-1px -1px #ddd; }
+.sidebar ul:last-child li:first-child div { display: none; background: #fff; position: absolute; left: -120px; top: -52px; z-index: 1; text-align: center; border: 1px solid #ddd; box-shadow: 1px 1px #ddd,-1px -1px #ddd; color: #f00; line-height: 30px; }
 
-.sidebar ul:last-child li:first-child div a { display: block; text-align: center; line-height: 30px; color: #f00; }
+.sidebar ul:last-child li:first-child div a { display: block; width: 90px; height: 90px; background: url("img/ewm.jpg") no-repeat; padding: 6px; margin: 0 auto; }
 
-.sidebar ul:last-child li:first-child div a p { color: #222; padding: 0 6px; }
-
-.sidebar ul:last-child li:first-child div a img { padding: 6px; }
+.sidebar ul:last-child li:first-child div p { color: #222; padding: 0 6px; }

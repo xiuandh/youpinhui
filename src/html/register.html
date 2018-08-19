@@ -4,10 +4,19 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/icon.css">
+	<link rel="stylesheet" href="../css/index.css">
 	<link rel="stylesheet" href="../css/register.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script>
+		jQuery($=>{
+			$('.header').load("../index.html .gps");
+			$('foot').load('../index.html .footer')
+		})
+	</script>
 	<title></title>
 </head>
 <body>
+	<div class="header"></div>
 	<div class="land">
 		<!-- 妹妹的左固定 -->
 		<div class="contianer">
@@ -74,5 +83,6 @@
 			</div>
 		</div>	
 	</div>
+	<div class="foot"></div>
 </body>
 </html>

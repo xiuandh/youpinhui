@@ -382,8 +382,9 @@ $thirdColor:#f00;
     /*第三栏*/
     .footerinfo{
 	    padding-top: 22px;
-	    ine-height: 22px;
+	    line-height: 22px;
 	    text-align: center;
+
 	    .footer_list{
 		    height: 26px;
 	    	color: #555;
@@ -393,12 +394,17 @@ $thirdColor:#f00;
 				    padding: 0 8px;
 				    font-size: 13px;
 				    border-right:2px solid #222;
+
 			    }
+			    &:last-child span{
+				    	border-right:0 none;
+				    }
 	    	}
 	    }
 	    .foot_link{
 	    	width: 960px;
     		margin: 0 auto;
+    		position:relative;
     		.link_links{
     			line-height: 22px;
 			    height: 22px;
@@ -413,12 +419,11 @@ $thirdColor:#f00;
 			    	padding-right: 8px;
     				color: #555;
 			    }
-			    
     		}
     		i{    
-		    	position: fixed;
-			    bottom: 180px;
-			    right: 350px;
+		    	position: absolute;
+			    bottom: 0px;
+			    right: 50px;
 			    color: #f00;
 			}
 	    }
@@ -528,16 +533,16 @@ $thirdColor:#f00;
 				    .side_login_sign{
 				    	margin-top:30px; 
 				    	display:block;
-				    }
-				    img{
-				    	  
-				    	width: 74px;
-					    height: 74px;
-					    margin: 0 auto;
-					    display: block;
-					    margin-bottom: 10px;
-					    border: 1px solid #ddd;
-    					border-radius: 37px;
+					    a{
+					    	background:url(img/xiang.jpg);
+					    	width: 74px;
+						    height: 74px;
+						    margin: 0 auto;
+						    display: block;
+						    margin-bottom: 10px;
+						    border: 1px solid #ddd;
+	    					border-radius: 37px;
+	    				}
 				    }
 				    .side_login_btn{
 	    				a{
@@ -583,16 +588,18 @@ $thirdColor:#f00;
 					text-align:center;
 					border:1px solid #ddd;
 					box-shadow:1px 1px #ddd,-1px -1px #ddd;
+					color:$thirdColor;line-height:30px;
 					a{
 						display:block;
-						text-align:center;
-						line-height:30px;
-						color:$thirdColor;
-						p{
-							color:#222;
-							padding:0 6px;
-						}
-						img{padding:6px;}
+						width:90px;
+						height:90px;
+						background:url('img/ewm.jpg')no-repeat;
+						padding:6px;
+						margin:0 auto;
+					}
+					p{
+						color:#222;
+						padding:0 6px;
 					}
 				}
 			}
