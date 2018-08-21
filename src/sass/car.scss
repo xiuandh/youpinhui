@@ -1,0 +1,283 @@
+.top{
+    height: 80px;
+    background-color: #d60a2e;
+}
+.header{border-bottom:1px solid #ddd;}
+.car_h{
+	padding: 20px 0;
+	h1{
+		width:305px;
+		float:left;
+		height:46px;
+		text-indent:-1000px;
+		background:url('img/logo.png')no-repeat;
+	}
+	.stepflex{
+	    border-top: 2px solid #ddd;
+	    text-align: center;
+	    margin: 25px 30px 0 0;
+	    dl{
+	        float: left;
+		    position: relative;
+		    width: 280px;
+		    top: -2px;
+		    border-top: 2px solid #ddd;
+		    dt{
+		        position: relative;
+			    margin: -10px auto 0;
+			    color: #fff;
+			    width: 18px;
+			    height: 18px;
+			    background:#f00;
+			    border-radius:50%;
+			    line-height: 18px;
+		    }
+		    dd{
+		        margin-top: 5px;
+    			position: relative;
+		    }
+		    &.done{
+		        border-top-color: #ff504a;
+	    		width: 140px;
+	    	}
+	    	&.last{
+	    	    width:140px;
+	    	}
+	    }
+	}
+	
+}
+.shoppingcart{
+		.cart_title{
+		    padding-top: 10px;
+		    font-size: 16px;
+		    color: #222;
+		    line-height: 21px;
+		}
+		.cart_con_tit{
+		    background-color: #f2f2f2;
+		    font-size: 16px;
+		    color: #666;
+		    border: 1px solid #e8e8e8;
+    		margin-top: 10px;
+    		li{
+    			float: left;
+    			text-align: left;
+    		}
+    		.tit_check{
+			    padding: 10px 15px 10px 20px;
+				width: 150px;
+				input{
+					@extend %input;
+				}
+				label{
+					    margin-left: 20px;
+				}
+    		}
+    		.tit_meg{
+    		    padding: 10px 80px 10px 0;
+    			width: 400px;
+    		}
+    		.tit_price{
+    			    width: 180px;
+    			padding: 10px 0;
+    		}
+    		.tit_quantity{
+	    		width: 220px;
+			    text-align: center;
+			    padding: 10px 70px 10px 0;
+    		}
+    		.tit_sum{
+    			width: 200px;
+    			padding: 10px 0;
+    		}
+    		.tit_action{
+    		    width: 100px;
+    			padding: 10px 0;
+    		}
+		}
+	}
+%input{width:16px;height:16px;}
+.cart_split{
+	.car_split_tit{
+		margin-top: 10px;
+	    height: 35px;
+	    line-height: 35px;
+	    border-bottom: 2px solid #AAA;
+	    input{
+	        margin-left: 21px;
+	        @extend %input;
+	    }
+	    span{
+	        margin-left: 5px;
+		    font-weight: 500;
+		    font-size: 14px;
+		    color: #333;
+	    }
+	}
+	.cart_con{
+		border: 1px solid #e8e8e8;
+		margin:0;
+		border_top:0;
+		.cart_form{
+			padding: 20px 0 20px 53px;
+		    position: relative;
+		    display: inline-block;
+		    .c_meg{
+    			color: #666;
+    			dt{
+    			    float: left;
+    				margin-right: 15px;
+    				img{
+    				    width: 120px;
+					    height: 120px;
+					    border: 1px solid #e8e8e8;
+    				}
+    			}
+    			dd{
+	    			padding-right: 80px;
+				    width: 350px;
+				    float: left;
+				    a{
+				    	line-height:22px;
+				    	color:#666;
+				    }
+    			}
+		    }
+		    .c_price{
+			    width: 255px;
+			    margin-top: 33px;
+			    color: #666;
+			    padding-left:50px;
+			    p{
+			    	line-height:22px;
+			    	span{
+			    		font-size:20px;
+			    	}
+			    }
+		    }
+		    .c_quantity{
+			    text-align: center;
+			    width: 120px;
+			    padding-right: 100px;
+			    .c_amount{
+			        margin-top: 33px;
+			        a{
+				        float: left;
+					    width: 30px;
+					    height: 30px;
+					    border: 1px solid #ddd;
+					    text-align: center;
+					    font-size: 20px;
+					    line-height: 17px;
+			        }
+			        input{
+			            border: medium none;
+					    border-top: 1px solid #ddd;
+					    border-bottom: 1px solid #ddd;
+					    height: 30px;
+					    line-height: 18px;
+					    width: 30px;
+					    float: left;
+					    text-align: center;
+					    color: #666;
+			        }
+			    }
+		    }
+		    .c_sum{
+			    width: 200px;
+			    color: #666;
+			    font-size: 14px;
+			    font-weight: bold;
+			    margin-top: 33px;
+		    }
+		    .c_action{
+		    	width: 100px;
+    			margin-top: 33px;
+    			span{
+    				display:block;
+    			    background-position: 0 -125px;
+				    width: 18px;
+				    height: 20px;
+				    float: left;
+				   
+				    cursor: pointer;
+    			}
+		    }
+		    .c_check{
+		        position: absolute;
+			    left: 20px;
+			    top: 54px;
+			    input{@extend %input;}
+		    }
+		}
+	}	
+}
+
+.cart_sum{
+	border: 1px solid #e8e8e8;
+    margin-top: 10px;
+    .c_balance{
+        padding: 20px;
+        .c_count{
+    		color: #333;
+    		p{
+    			line-height:24px;
+    			.c_rt{
+    			    width: 80px;
+			    display: inline-block;
+			    text-align: right;
+			    em{
+			        font-size: 14px;
+			    }
+    			}
+    			.c_lt{
+    			    width: 95px;
+				    text-align: right;
+				    display: inline-block;
+    			}
+    			.c_num{
+    			    color: #f70800;
+    			}
+    			.c_paid{
+				    color: #f70800;
+					font-size: 18px;
+    			}
+    			.c_shu{
+    				font-weight:800px;
+    			}
+    		}
+        }
+
+    }
+}
+ .c_balance_bt{
+	height:50px;
+	background-color: #f2f2f2;
+	border-top: 1px solid #e8e8e8;
+	.b_check{
+	    padding: 17px 0 0 20px;
+	    input{
+		    @extend %input;
+	    }
+	    label{
+	        margin-left: 10px;
+		    color: #666;
+		    cursor: pointer;
+	    }
+	}
+	.b_del{
+	    color: #666;
+	    margin-left: 20px;
+	    margin-top: 18px;
+	    cursor: pointer;
+	}
+	.balance_bt{			    width: 160px;
+	    text-align: center;
+	    font-weight: bold;
+	    font-size: 18px;
+	    color: #fff;
+	    background-color: #ff504a;
+	    line-height: 50px;
+	}
+}

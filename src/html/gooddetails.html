@@ -2,23 +2,231 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<base href="../index.html">
 	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/icon.css">
+	<link rel="stylesheet" href="../css/index.css">
 	<link rel="stylesheet" href="../css/gooddetails.css">
-	<title></title>
+	<script src="../lib/jquery-3.3.1.min.js"></script>
+	<script>
+		jQuery($=>{
+			$('.header').load("../index.html #header");
+			$('.footer').load('../index.html .footer');
+			$('.side').load('../index.html .sidebar');
+			$('.sideout').load('../index.html .sideout');
+		})
+	</script>
 </head>
 <body>
-	<main class="main">
+	<div class="header"></div>
+	<main class="details">
 		<div class="container">
-			<div class="sh-crumbs">
+			<div class="sh_crumbs">
 				<span>当前位置：</span>
 				<a href="">首页<i class="iconfont icon_arrow"></i></a>
-				<a href="">首页<i class="iconfont icon_arrow"></i></a>
-				<a href="">首页<i class="iconfont icon_arrow"></i></a>
-				<a href="">首页<i class="iconfont icon_arrow"></i></a>
-				<span>曼丽伊春季100%真丝韩版花色套头蝴蝶结女衬衣花色</span>
+				<a href="">珠宝<i class="iconfont icon_arrow"></i></a>
+				<a href="">宝石珍珠<i class="iconfont icon_arrow"></i></a>
+				<a href="">彩宝<i class="iconfont icon_arrow"></i></a>
+				<span>碧色秦城奢华珠宝套组</span>
+			</div>
+			<div class="sh_goods_key clearfix">
+				<div class="sh_goods_gallery fl">
+					<div class="preview">
+						<div class="jqzoom">
+							<img src="../img/zb1.jpg">
+						</div>
+						<i class="iconfont icon-love"></i>
+						<div class="bqtv"></div>
+					</div>
+					<div class="jqzoom_scorll clearfix">
+						<ul class="items">
+								<li><img src="../img/zb2.jpg"></li>
+								<li><img src="../img/zb2.jpg"></li>
+								<li><img src="../img/zb2.jpg"></li>
+								<li><img src="../img/zb2.jpg"></li><li><img src="../img/zb2.jpg"></li>
+						</ul>
+					</div>
+					<div class="sh_goods_share clearfix">
+						<p class="no fl">商品货号：575958-001</p>
+						<ul class="baidu_share fr">
+							<li>
+								<i class="iconfont icon-arrow"></i>
+								<span>分享</span>
+							</li>
+							<li>
+								<span>
+									<i class="iconfont icon-love"></i>
+									已关注
+								</span>
+								<!-- 关注成功后 -->
+								<span class="tip concerns_tip">
+									<p>
+										关注成功
+										<a href="">去我的关注查看</a>
+									</p>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sh_goods_parameters fr">
+					<div class="brand">
+						<a href="" class="count_brand">珠宝</a>
+						<h1 class="title">珠宝套组</h1>
+					</div>
+					<p class="description">
+						国际大牌款式设计元素，外观高贵优雅，款式新颖别致，工艺精湛细节之处有独到处理，奢华但不夸张，精致而不缺个性，能一眼就喜欢上“它”
+					</p>
+					<ul class="price_box">
+						<li class="mb">
+							<span class="label price_label">价格</span>
+							<span class="price">￥<em>998</em></span>
+						</li>
+						<li class="clearfix">
+							<span class="label fl">优惠</span>
+							<div class="fl">
+								<p>
+									<span class="tag">立减</span>
+									<span>TV商品下单立减10元</span>
+								</p>
+								<p>
+									<span class="tag">立减</span>
+									<span>TV商品下单立减10元</span>
+								</p>
+							</div>
+							
+						</li>
+					</ul>
+					<div class="choice_buy clearfix">
+						<div class="buy_t clearfix">
+							<span class="add fl">送至</span>
+							<input type="text" class="fl">
+							<span class="yu fl">有货</span>
+						</div>
+						<div class="buynum clearfix">
+							<span class="add fl">数量</span>
+							<p class="num fl clearfix">
+								<button class="num_dev fl">-</button>
+								<span class="num_num fl">1</span>
+								<button class="num_add fl">+</button>
+							</p>
+						</div>
+					</div>
+					<div class="add_cart">
+						<button class="add_car">
+							<i class="iconfont icon-buycar"></i>
+						加入购物车
+						</button>
+						<p class="ugo_bar">
+							<span>TV商品</span>
+							<a href="">水年华珠宝</a>
+							<span>发货，并提供售后服务</span>
+						</p>
+					</div>
+					
+				</div>
+			</div>
+			<div class="sh_goods_declartion">
+				<img src="../css/img/declaration.jpg">
+			</div>
+			<div class="sh_goods_details clearfix">
+				<div class="group fl clearfix">
+					<div class="tab clearfix">
+						<div class="tab_select">
+							<a class="datails">商品详情</a>
+							<a class="comments">商品详情</a>
+							<a class="services">商品详情</a>
+						</div>
+					</div>
+					<div class="comment clearfix">
+						<h3 class="title"></h3>
+						<div class="comment_box clearfix">
+							<div class="inner_header clearfix">
+								<ul class="select_comment clearfix">
+									<li>
+										<input type="radio" id="all">
+										<label for="all">全部评论<span>（24）</span></label>
+									</li>
+									<li>
+										<input type="radio" id="hao">
+										<label for="hao">好评<span>（24）</span></label>
+									</li>
+									<li>
+										<input type="radio" id="zhong">
+										<label for="zhong">中评<span>（0）</span></label>
+									</li>
+									<li>
+										<input type="radio" id="cha">
+										<label for="cha">差评<span>（0）</span></label>
+									</li>
+									<li>
+										<input type="checkbox" id="tu">
+										<label for="tu">有晒图</label>
+									</li>
+								</ul>
+								<ul class="comment_box_list clearfix">
+									<li class="clearfix">
+										<div class="descrption fl">
+											<p class="text">ahfdkahfaf dssf</p>
+											<p class="datatime">2018-08-20</p>
+										</div>
+										<div class="author fr">
+											<span>18128384722</span>
+											<i class="iconfont icon-love"></i>
+											<i class="iconfont icon-love"></i>
+											<i class="iconfont icon-love"></i>
+											<i class="iconfont icon-love"></i>
+											<i class="iconfont icon-love"></i>
+										</div>
+									</li>
+									<li class="clearfix">
+										<div class="descrption fl">
+											<p class="text">ahfdkahfaf dssf</p>
+											<p class="datatime">2018-08-20</p>
+										</div>
+										<div class="author fr">
+											<span>18128384722</span>
+											<i class="iconfont icon-love"></i>
+											<i class="iconfont icon-love"></i>
+											<i class="iconfont icon-love"></i>
+											<i class="iconfont icon-love"></i>
+											<i class="iconfont icon-love"></i>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="comment_page fr">
+									<a href="" class="text">
+										上一页
+										<i class="iconfont icon-arrow"></i>
+									</a>
+									<a href="" class="p_num">1</a>
+									<a href="" class="p_num">2</a>
+									<a href="" class="text">
+										下一页
+										<i class="iconfont icon-arrow"></i>
+									</a>
+								</div>
+					</div>
+				</div>
+				<div class="watching fr">
+					<h3>大家都在看</h3>
+					<ul class="all_watching">
+						<li>
+							<a href="">
+								<img src="../img/zb9.jpg">
+								<span class="title">Guy Laroche姬龙雪原装进口毛巾家庭装·绿多色·洗面巾*6*条·浴巾*2*条·手巾*7*条</span>
+								<span class="price">￥998</span>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</main>
-	
+	<div class="footer"></div>
+	<div class="sideout"></div>
+	<div class="side"></div>
 </body>
 </html>

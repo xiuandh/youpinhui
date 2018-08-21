@@ -4,24 +4,29 @@ $secondColor:#fff;
 $fontColor:#666;
 $thirdColor:#f00;
 #you{width:100%;height:100%;margin:0;padding:0;}
-
+%gps_l{
+	li{
+		float:left;
+		font-size:$fontSize;
+		line-height:43px;
+		&:hover a{
+			color:$thirdColor;
+		}
+		a{
+			display:block;
+			color:$fontColor;
+		}
+	}
+}
 #header .container{}
 .gps{
 	height:42px;border-bottom:1px solid #ddd;background:$mainColor;
 	.gps_l{
-		li{
-			float:left;
-			font-size:$fontSize;
-			line-height:43px;
-			a{
-				display:block;
-				color:$fontColor;
-			}
-		}
+		@extend %gps_l;
 	}
 }
 .gps_r{
-	@extend .gps_l;
+	@extend %gps_l;
 	li{
 		a{
 			span{
@@ -307,7 +312,7 @@ $thirdColor:#f00;
 	li{
 		&:last-child{
 			font-size:$fontSize;
-			span{
+			& span{
 			    background: #000;
 			    color: #fff;
 			    width: 20px;
@@ -318,7 +323,289 @@ $thirdColor:#f00;
 			}
 		}
 	}
+	.day_list{
+		padding-top:20px;
+		.daily{
+			width: 364px;
+		    height: 558px;
+		    padding-top:4px;
+		    background: linear-gradient(to top right, #ff8e4a ,#fa4444 );
+		    .daily_shop{
+			    background: #FFF;
+			    width: 280px;
+			    height: 490px;
+			    padding: 15px;
+			    margin: 17px 0 0 15px;
+			    box-shadow: 0 0 5px rgba(0,0,0,.5);
+			    background-color: white;
+			    position:relative;
+			    .shadow_lb{
+			    	display:block;
+				    position: absolute;
+				    background: url(img/shadow_lb.png);
+				    background-size: 100% 100%;
+				    width: 47px;
+				    height: 30px;
+				    left: -11px;
+				    bottom: -11px;
+			    }
+			    .shadow_rt{
+			    	display:block;
+				    position: absolute;
+				    background: url(img/shadow_rt.png);
+				    width: 47px;
+				    height: 30px;
+				    right: -11px;
+				    top: -11px;
+			    }
+			    .everyday{
+			        float: left;
+				    width: 119px;
+				    height: 30px;
+				    line-height: 30px;				    border-radius: 0 0 10px 10px;
+				    background: #aa2424;
+				    color: #FFF;
+				    font-size: 17px;
+				    position: absolute;
+				    left: 5px;
+				    top: 0;
+			    }
+			    a{	
+			    	display:block;
+			    	height: 280px;
+    				width: 100%;
+    				img{width:100%;}
+			    }
+			    .daily_shop_tis{
+			        font-size: 26px;
+				    color: #f70800;
+				    padding-top: 10px;
+				    text-overflow: ellipsis;
+				    display: -webkit-box;
+			    }
+			    .daily_shop_tt{
+			        font-size: 24px;
+				    color: #222;
+				    overflow: hidden;
+				    text-overflow: ellipsis;
+				    display: -webkit-box;
+			    }
+			    .daily_shop_box{
+			    	padding-top: 15px;
+			    	.daily_shop_price{
+			    	    font-size: 26px;
+					    color: #222;
+					    font-family: arial;
+					    margin-right: 10px;
+			    	}
+			    	em{
+			    		font-size: 18px;
+    					line-height: 36px;
+			    	}
+			    }
+			    .daily_num_tag{
+			        width: 74px;
+				    height: 66px;
+				    padding-top: 6px;
+				    position: absolute;
+				    bottom: 0;
+				    right: -5px;
+				    background-image: url(img/bg_tag.png);
+				    background-repeat: no-repeat;
+				    background-size: 100%;
+				    color: #FFF;
+				    text-align: center;
+				    .span1{
+					    transform: rotate(15deg);
+					    font-size: 22px;
+					    line-height: 24px;
+					    .span2{
+					    	font-size: 22px;
+					    }
+				    }
+			    }
+		    }  
+		}
+		.daily_shop_one{
+			    width: 1090px;
+			    height: 534px;
+			    border: 1px solid #ddd;
+			    padding: 15px 10px;
+			    background: #FFF;
+			    .daily_shop_list{
+				    position: relative;
+				    li{
+				        position: relative;
+					    float: left;
+					    height: 542px;
+					    border-left: 1px solid #eee;
+					    .list{
+						    width: 310px;
+						    padding: 0 15px;
+						    
+						    margin-left: -1px;
+						    img{
+							    width:310px;
+							    height:310px;
+						    }
+					    }
+					    .list_tit{
+						    font-size:22px;
+					        margin-top: 10px;
+						    height: 52px;
+						    line-height: 30px;
+						    padding: 0 10px;
+					    }
+					    .list_yen{
+						    margin-top:5px;
+						    padding:0 5px;
+						    .list_yen_price{
+						        font-size: 40px;
+							    color: #222;
+							    font-family: arial;
+							    margin-right: 10px;
+						    }
+						    .line_price{
+						        font-size: 20px;
+    							line-height: 36px;
+						    }
+					    }
+					    .list_box_yen{
+					        margin-top: 12px;
+						    height: 30px;
+						    line-height: 42px;
+						    color: #666;
+						    font-size: 22px;
+						    .box_surplus{
+						        width: 90px;
+							    height: 30px;
+							    line-height: 30px;
+							    font-size: 16px;
+							    background: #ffe3e2;
+							    border: 1px solid #f70800;
+							    color: #f70800;
+							    text-align: center;
+						    }
+						    .box_quicking{
+						    	display:block;
+						    	width:50px;
+							    font-size: 16px;
+							    height: 30px;
+							    line-height: 30px;
+							    text-align: center;
+							    border-radius: 13px;
+							    padding: 0 10px;
+							    cursor: pointer;
+							    border: 1px solid #f70800;
+							    background: #f70800;
+							    color: #fff;
+						    }
+					    }
+				    }
+			    }
+		 	}
+	}
 }
+/*品类精选促销*/
+.selection{
+	.selection_bar{
+		overflow: hidden;
+	    width: 102%;
+	    a{
+	    	display: block;
+		    float: left;
+		    margin-right: 20px;
+		    padding-top: 20px;
+		    img{
+		        width: 740px;
+    			height: 406px;
+		    }
+	    }
+	}
+}
+.global{
+	.global_list{
+		padding-bottom: 30px;
+		li{
+			height:460px;
+			float: left;
+		    margin-top: 20px;
+		    margin-right: 20px;
+		    width: 318px;
+		    height: 452px;
+		    border: 1px solid #ddd;
+		    .list_box{
+			    padding: 10px;
+			    background-color: #fff;
+			    position: relative;
+			    a{
+			    	text-decoration: none; 
+				    color: #222;
+				    outline: none;
+				    .list_box_img{
+				        position: relative;
+					    width: 298px;
+					    height: 298px;
+					    img{
+					    	background:#fff;
+					    	width:100%;
+					    }
+				    }
+				    .box_tit{
+					    margin-top: 18px;
+					    height: 52px;
+					    line-height: 26px;
+					    padding: 0 10px;
+					    .img_tit{
+					        font-size: 16px;
+						    display: block;
+					    }
+				    }
+				    .bot_subtit{
+				        color: #f70800;
+					    margin-top: 5px;
+					    height: 16px;
+					    line-height: 16px;
+					    font-size: 12px;
+					    padding: 0 10px;
+				    }
+				    .box_yan{
+				    	margin-top: 15px;
+				    	.box_price{
+					    	font-size: 26px;
+						    color: #222;
+						    font-family: arial;
+						    margin-right: 10px;
+				    	}
+				    	.sale_price{
+				    		position: relative;
+						    margin-top: 9px;
+						    text-decoration: none;
+						    font-size: 12px;
+				    	}
+				    	.purchased{
+					    	color: #666;
+	    					margin-top: 9px;
+	    					em{
+	    						color:#f00;
+	    					}
+				    	}
+				    }
+			    }
+		    }
+		    .box_bt{
+		        height: 32px;
+			    line-height: 32px;
+			    background-color: #f8f8f8;
+			    color: #666;
+			    font-size: 12px;
+			    border-top: 1px solid #eee;
+			    padding: 0 20px;
+		    }
+		}
+	}
+}
+
 /*底部样式*/
 .footer{
 	height: auto;
@@ -330,7 +617,6 @@ $thirdColor:#f00;
     padding-bottom: 90px;
     border-top: 1px solid #e3e3e3;
     .footad{
-	    height: 153px;
 	    img{
 	    	width:100%;
 	    }
@@ -484,6 +770,7 @@ $thirdColor:#f00;
 	    		top:8px;
 	    		left:8px;
 	    	}
+
 	    	&:hover{background:$thirdColor;}
 	    	&:hover .bat_side{display:block;}
 	    	.bat_side{
@@ -510,6 +797,7 @@ $thirdColor:#f00;
     		li:first-child{
     			&:hover .side_login{display:block;}
     			.side_login{
+    				border:1px solid #ddd;
     				display:none;
     				text-align:center;
     			    position: absolute;
@@ -570,6 +858,24 @@ $thirdColor:#f00;
 					    }
 				    }
     			}
+    		}
+    		li:nth-child(2){
+
+	    		.buycarnum{
+		    		position: absolute;
+				    display: block;
+				    width: 18px;
+				    height: 16px;
+				    border-radius:50%;
+				    line-height: 14px;
+				    text-align: center;
+				    color: $secondColor;;
+				    background:$thirdColor;
+				    overflow: hidden;
+				    right: 0px;
+				    top: -2px;
+		    	}
+		    	&:hover .buycarnum{background:$secondColor;;color:$thirdColor;}
     		}
     	}
     	&:last-child{

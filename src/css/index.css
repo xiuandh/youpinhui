@@ -1,11 +1,13 @@
 @charset "UTF-8";
 #you { width: 100%; height: 100%; margin: 0; padding: 0; }
 
+.gps .gps_l li, .gps_r li { float: left; font-size: 18px; line-height: 43px; }
+
+.gps .gps_l li:hover a, .gps_r li:hover a { color: #f00; }
+
+.gps .gps_l li a, .gps_r li a { display: block; color: #666; }
+
 .gps { height: 42px; border-bottom: 1px solid #ddd; background: #F6F6F6; }
-
-.gps .gps_l li, .gps .gps_r li { float: left; font-size: 18px; line-height: 43px; }
-
-.gps .gps_l li a, .gps .gps_r li a { display: block; color: #666; }
 
 .gps_r li a span { padding: 0 10px; height: 18px; border-right: 1px solid #666; }
 
@@ -110,10 +112,101 @@
 
 .day_dis li:last-child span { background: #000; color: #fff; width: 20px; font-size: 20px; height: 20px; padding: 2px; margin-right: 4px; }
 
+.day_dis .day_list { padding-top: 20px; }
+
+.day_dis .day_list .daily { width: 364px; height: 558px; padding-top: 4px; background: linear-gradient(to top right, #ff8e4a, #fa4444); }
+
+.day_dis .day_list .daily .daily_shop { background: #FFF; width: 280px; height: 490px; padding: 15px; margin: 17px 0 0 15px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); background-color: white; position: relative; }
+
+.day_dis .day_list .daily .daily_shop .shadow_lb { display: block; position: absolute; background: url(img/shadow_lb.png); background-size: 100% 100%; width: 47px; height: 30px; left: -11px; bottom: -11px; }
+
+.day_dis .day_list .daily .daily_shop .shadow_rt { display: block; position: absolute; background: url(img/shadow_rt.png); width: 47px; height: 30px; right: -11px; top: -11px; }
+
+.day_dis .day_list .daily .daily_shop .everyday { float: left; width: 119px; height: 30px; line-height: 30px; border-radius: 0 0 10px 10px; background: #aa2424; color: #FFF; font-size: 17px; position: absolute; left: 5px; top: 0; }
+
+.day_dis .day_list .daily .daily_shop a { display: block; height: 280px; width: 100%; }
+
+.day_dis .day_list .daily .daily_shop a img { width: 100%; }
+
+.day_dis .day_list .daily .daily_shop .daily_shop_tis { font-size: 26px; color: #f70800; padding-top: 10px; text-overflow: ellipsis; display: -webkit-box; }
+
+.day_dis .day_list .daily .daily_shop .daily_shop_tt { font-size: 24px; color: #222; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; }
+
+.day_dis .day_list .daily .daily_shop .daily_shop_box { padding-top: 15px; }
+
+.day_dis .day_list .daily .daily_shop .daily_shop_box .daily_shop_price { font-size: 26px; color: #222; font-family: arial; margin-right: 10px; }
+
+.day_dis .day_list .daily .daily_shop .daily_shop_box em { font-size: 18px; line-height: 36px; }
+
+.day_dis .day_list .daily .daily_shop .daily_num_tag { width: 74px; height: 66px; padding-top: 6px; position: absolute; bottom: 0; right: -5px; background-image: url(img/bg_tag.png); background-repeat: no-repeat; background-size: 100%; color: #FFF; text-align: center; }
+
+.day_dis .day_list .daily .daily_shop .daily_num_tag .span1 { transform: rotate(15deg); font-size: 22px; line-height: 24px; }
+
+.day_dis .day_list .daily .daily_shop .daily_num_tag .span1 .span2 { font-size: 22px; }
+
+.day_dis .day_list .daily_shop_one { width: 1090px; height: 534px; border: 1px solid #ddd; padding: 15px 10px; background: #FFF; }
+
+.day_dis .day_list .daily_shop_one .daily_shop_list { position: relative; }
+
+.day_dis .day_list .daily_shop_one .daily_shop_list li { position: relative; float: left; height: 542px; border-left: 1px solid #eee; }
+
+.day_dis .day_list .daily_shop_one .daily_shop_list li .list { width: 310px; padding: 0 15px; margin-left: -1px; }
+
+.day_dis .day_list .daily_shop_one .daily_shop_list li .list img { width: 310px; height: 310px; }
+
+.day_dis .day_list .daily_shop_one .daily_shop_list li .list_tit { font-size: 22px; margin-top: 10px; height: 52px; line-height: 30px; padding: 0 10px; }
+
+.day_dis .day_list .daily_shop_one .daily_shop_list li .list_yen { margin-top: 5px; padding: 0 5px; }
+
+.day_dis .day_list .daily_shop_one .daily_shop_list li .list_yen .list_yen_price { font-size: 40px; color: #222; font-family: arial; margin-right: 10px; }
+
+.day_dis .day_list .daily_shop_one .daily_shop_list li .list_yen .line_price { font-size: 20px; line-height: 36px; }
+
+.day_dis .day_list .daily_shop_one .daily_shop_list li .list_box_yen { margin-top: 12px; height: 30px; line-height: 42px; color: #666; font-size: 22px; }
+
+.day_dis .day_list .daily_shop_one .daily_shop_list li .list_box_yen .box_surplus { width: 90px; height: 30px; line-height: 30px; font-size: 16px; background: #ffe3e2; border: 1px solid #f70800; color: #f70800; text-align: center; }
+
+.day_dis .day_list .daily_shop_one .daily_shop_list li .list_box_yen .box_quicking { display: block; width: 50px; font-size: 16px; height: 30px; line-height: 30px; text-align: center; border-radius: 13px; padding: 0 10px; cursor: pointer; border: 1px solid #f70800; background: #f70800; color: #fff; }
+
+/*品类精选促销*/
+.selection .selection_bar { overflow: hidden; width: 102%; }
+
+.selection .selection_bar a { display: block; float: left; margin-right: 20px; padding-top: 20px; }
+
+.selection .selection_bar a img { width: 740px; height: 406px; }
+
+.global .global_list { padding-bottom: 30px; }
+
+.global .global_list li { height: 460px; float: left; margin-top: 20px; margin-right: 20px; width: 318px; height: 452px; border: 1px solid #ddd; }
+
+.global .global_list li .list_box { padding: 10px; background-color: #fff; position: relative; }
+
+.global .global_list li .list_box a { text-decoration: none; color: #222; outline: none; }
+
+.global .global_list li .list_box a .list_box_img { position: relative; width: 298px; height: 298px; }
+
+.global .global_list li .list_box a .list_box_img img { background: #fff; width: 100%; }
+
+.global .global_list li .list_box a .box_tit { margin-top: 18px; height: 52px; line-height: 26px; padding: 0 10px; }
+
+.global .global_list li .list_box a .box_tit .img_tit { font-size: 16px; display: block; }
+
+.global .global_list li .list_box a .bot_subtit { color: #f70800; margin-top: 5px; height: 16px; line-height: 16px; font-size: 12px; padding: 0 10px; }
+
+.global .global_list li .list_box a .box_yan { margin-top: 15px; }
+
+.global .global_list li .list_box a .box_yan .box_price { font-size: 26px; color: #222; font-family: arial; margin-right: 10px; }
+
+.global .global_list li .list_box a .box_yan .sale_price { position: relative; margin-top: 9px; text-decoration: none; font-size: 12px; }
+
+.global .global_list li .list_box a .box_yan .purchased { color: #666; margin-top: 9px; }
+
+.global .global_list li .list_box a .box_yan .purchased em { color: #f00; }
+
+.global .global_list li .box_bt { height: 32px; line-height: 32px; background-color: #f8f8f8; color: #666; font-size: 12px; border-top: 1px solid #eee; padding: 0 20px; }
+
 /*底部样式*/
 .footer { height: auto; text-align: center; padding: 0; background: none; font-family: "\5FAE\8F6F\96C5\9ED1",tahoma,arial,"\u5b8b\u4f53",sans-serif; -webkit-font-smoothing: subpixel-antialiased !important; padding-bottom: 90px; border-top: 1px solid #e3e3e3; /*第二栏*/ /*第三栏*/ }
-
-.footer .footad { height: 153px; }
 
 .footer .footad img { width: 100%; }
 
@@ -190,7 +283,7 @@
 
 .sidebar ul:first-child li:first-child:hover .side_login { display: block; }
 
-.sidebar ul:first-child li:first-child .side_login { display: none; text-align: center; position: absolute; left: -260px; background: #fff; color: #222; top: 0; width: 257px; height: 228px; padding: 2px; z-index: 1; }
+.sidebar ul:first-child li:first-child .side_login { border: 1px solid #ddd; display: none; text-align: center; position: absolute; left: -260px; background: #fff; color: #222; top: 0; width: 257px; height: 228px; padding: 2px; z-index: 1; }
 
 .sidebar ul:first-child li:first-child .side_login .closeX { display: block; position: absolute; width: 12px; height: 12px; right: 12px; top: 20px; cursor: pointer; }
 
@@ -203,6 +296,10 @@
 .sidebar ul:first-child li:first-child .side_login .side_login_go { position: absolute; bottom: 2px; left: 2px; width: 207px; background-color: #f8f8f8; padding: 16px 25px; }
 
 .sidebar ul:first-child li:first-child .side_login .side_login_go a { display: inline-block; width: 88px; height: 28px; color: #222; text-align: center; line-height: 28px; color: #222; border-radius: 5px; border: 1px solid #ddd; }
+
+.sidebar ul:first-child li:nth-child(2) .buycarnum { position: absolute; display: block; width: 18px; height: 16px; border-radius: 50%; line-height: 14px; text-align: center; color: #fff; background: #f00; overflow: hidden; right: 0px; top: -2px; }
+
+.sidebar ul:first-child li:nth-child(2):hover .buycarnum { background: #fff; color: #f00; }
 
 .sidebar ul:last-child { position: fixed; right: 0px; bottom: 0px; }
 

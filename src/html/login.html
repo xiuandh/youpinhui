@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<base href="../index.html">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/icon.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/register.css">
+	<link rel="stylesheet" href="../css/login.css">
+	<script src="../lib/jquery-3.3.1.min.js"></script>
+	<script>
+		jQuery($=>{
+			$('.header').load("../index.html .gps");
+			$('.footer').load('../index.html .footer');
+			$('.side').load('../index.html .sidebar');
+			$('.sideout').load('../index.html .sideout');
+			$('.land_logo').load('html/register.html .land_logo');
+			$('.regnav').load('html/register.html .regnav');
+		})
+	</script>
+	<title></title>
+</head>
+<body>
+	<div class="header"></div>
+	<div class="land">
+		<!-- 妹妹的左固定 -->
+		<div class="contianer">
+			<img src="../img/register_log.gif">
+			<div class="land_logo"></div>
+			<div class="regnav"></div>
+
+			<div class="land_con clearfix">
+				<div class="land_con_l fl">
+					<form action="">
+					<div class="item">
+						<label for="phone fl">手机号/邮箱/昵称:</label>
+						<input type="text" id="phone" class="tel" placeholder="请输入您注册的手机号/邮箱/昵称">
+					</div>
+					
+					<div class="item">
+						<label for="passw fl">密码:</label>
+						<input type="text" id="passw" class="userpd">
+					</div>
+					
+					<div class="login_box clearfix">
+						<input type="checkbox" class="checkbox fl" />
+						<label class="fl">记住用户名</label>
+						<a href="" class="">忘记密码</a>
+					</div>
+					<div class="item_btn">
+						<button class="btn">提交</button>
+						
+					</div>
+					<div class="login_tips">
+							<p>温馨提示</p>
+							<span>优品惠升级为电视购物大全，其中融合了优购物、时尚购等多家优质购物频道。时尚购APP用户已合并至优品惠，可以通过时尚购APP账户和密码登录优品惠。</span>
+						</div>
+		
+					</form>
+				</div>
+				<div class="land_con_r fr">
+					<div class="land_item3">
+						<span>您还不是优品惠的会员？</span>
+						<a href="">免费注册</a>
+					</div>
+					<div class="land_item3 mg4">
+						<span>电话订购优品惠商品？</span>
+						<a href="">快速激活</a>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="footer"></div>
+	<div class="sideout"></div>
+	<div class="side"></div>
+</body>
+</html>

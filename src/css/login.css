@@ -1,0 +1,31 @@
+.land_con { border: 2px solid #ff8400; width: 964px; }
+
+.land_con .land_con_l { width: 532px; padding-left: 133px; color: #666666; }
+
+.land_con .land_con_l .item { width: 351px; height: 65px; }
+
+.land_con .land_con_l .item label { display: block; height: 20px; text-align: left; padding-bottom: 7px; }
+
+.land_con .land_con_l .item input { font: 13px Arial; color: #ccc; width: 315px; padding: 5px 25px 5px 10px; height: 25px; line-height: 25px; border: 1px solid #a2a2a2; }
+
+.land_con .land_con_l .login_box { width: 351px; height: 20px; padding-top: 12px; }
+
+.land_con .land_con_l .login_box label { height: 13px; line-height: 13px; display: block; margin-left: 6px; }
+
+.land_con .land_con_l .login_box a { color: #0089cf; float: right; }
+
+.land_con .land_con_l .item_btn { height: 37px; margin-top: 10px; }
+
+.land_con .land_con_l .item_btn .btn { width: 351px; height: 37px; background: #F00; border: none; cursor: pointer; }
+
+.land_con .land_con_l .login_tips { padding: 25px 0; color: #888; width: 351px; line-height: 22px; }
+
+.land_con .land_con_r { width: 217px; background-color: #fff6ec; height: 316px; padding-left: 82px; padding-top: 58px; }
+
+.land_con .land_con_r .land_item3 { width: 219px; height: 57px; }
+
+.land_con .land_con_r .land_item3 span { font-size: 14px; color: #555555; }
+
+.land_con .land_con_r .land_item3 a { display: block; width: 142px; height: 32px; background: #fff; line-height: 32px; text-align: center; color: #ff6000; margin-top: 10px; }
+
+.land_con .land_con_r .mg4 { margin-top: 42px; }

@@ -5,6 +5,8 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/icon.css">
 	<link rel="stylesheet" href="css/index.css">
+	<script src="lib/jquery-3.3.1.min.js"></script>
+	<script src="js/page.js"></script>
 	<title>首页</title>
 </head>
 <body>
@@ -24,7 +26,7 @@
 					</ul>
 					<ul class="gps_r fr">
 						<li><a href="html/register.html"><span>注册</span></a></li>
-						<li><a href="#"><span>登录</span></a></li>
+						<li><a href="html/login.html"><span>登录</span></a></li>
 						<li><a href="#"><span>我的订单</span></a></li>
 						<li><a href="#"><span>我的关注</span></a></li>
 						<li><a href="#"><span>资讯</span></a></li>
@@ -46,7 +48,6 @@
 				</div>	
 			</div>
 			<div class="container">
-				
 				<!-- logo -->
 				<div class="logo clearfix">
 					<div class="logo_l fl clearfix">
@@ -260,12 +261,89 @@
 							</p>
 						</li>
 					</ul>
-					<div class="day_list">
-						<div class="daily">
-							<a href=""></a>
+					<div class="day_list clearfix">
+						<div class="daily fl">
+							<!-- 图标 -->
+							<div class="daily_shop">
+								<i class="shadow_lb"></i>
+								<i class="shadow_rt"></i>
+								<i class="everyday">每日一品</i>
+								<a href="" class="daily_shop_img"><img src="img/zb1.jpg"></a>
+								<p class="daily_shop_tis">纯棉超柔 吸水亲肤</p>
+								<p class="daily_shop_tt">DAY&amp;ME 全棉超柔纱方巾毛巾浴巾3件组 柔软吸水AB纱工艺·鹅黄  鹅黄</p>
+								<p class="daily_shop_box">
+									<span class="daily_shop_price">￥68</span>
+									<em><del>￥278</del></em>
+								</p>
+								<dic class="daily_num_tag">
+									<p class="span1">
+										<em>立减</em>
+										<span class="span2">99</span>
+										<em>元</em>
+									</p>
+									
+								</dic>
+							</div>
 						</div>
-						<div class="day_one">
-							
+						<div class="daily_shop_one fr">
+								<div class="daily_shop_list">
+									<ul>
+										<li>
+											<a href="">
+												<div class="list">
+													<img src="img/zb8.jpg">
+												</div>
+												<p class="list_tit">
+													<em class="img_tit">文化的合法化安抚哈</em>
+												</p>
+												<div class="list_yen">
+													<em class="list_yen_price">149</em>
+													<em class="line_price"><del>999</del></em>
+												</div>
+												<div class="list_box_yen clearfix">
+													<span class="box_surplus fl">库存紧张</span>
+													<span class="box_quicking fr">马上抢</span>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="list">
+													<img src="img/zb8.jpg">
+												</div>
+												<p class="list_tit">
+													<em class="img_tit">文化的合法化安抚哈</em>
+												</p>
+												<div class="list_yen">
+													<em class="list_yen_price">149</em>
+													<em class="line_price"><del>999</del></em>
+												</div>
+												<div class="list_box_yen clearfix">
+													<span class="box_surplus fl">库存紧张</span>
+													<span class="box_quicking fr">马上抢</span>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<div class="list">
+													<img src="img/zb8.jpg">
+												</div>
+												<p class="list_tit">
+													<em class="img_tit">文化的合法化安抚哈</em>
+												</p>
+												<div class="list_yen">
+													<em class="list_yen_price">149</em>
+													<em class="line_price"><del>999</del></em>
+												</div>
+												<div class="list_box_yen clearfix">
+													<span class="box_surplus fl">库存紧张</span>
+													<span class="box_quicking fr">马上抢</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
 						</div>
 					</div>
 				</div>
@@ -279,10 +357,14 @@
 							<span class="live2">促销</span>
 						</li>
 					</ul>
+					<div class="selection_bar">
+						<a href=""><img src="img/sale.jpg"></a>
+						<a href=""><img src="img/sale2.jpg"></a>
+					</div>
 				</div>
 			</div>
 			<!-- 全球尖货 -->
-			<div class="selection clearfix">
+			<div class="global clearfix">
 				<div class="container">
 					<ul class="tv_h clearfix">
 						<li class="fl">
@@ -290,6 +372,10 @@
 							<span class="live2">全球尖货</span>
 						</li>
 					</ul>
+					<div class="global_list clearfix">
+						<ul>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</main>
@@ -415,7 +501,8 @@
 				</li>
 				<li>
 					<i class="iconfont icon-buycar"></i>
-					<p class="bat_side"><a href="">我的关注</a></p>
+					<span class="buycarnum">0</span>
+					<p class="bat_side"><a href="">我的购物车</a></p>
 				</li>
 				<li>
 					<i class="iconfont icon-love"></i>
