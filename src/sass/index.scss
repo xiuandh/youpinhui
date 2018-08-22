@@ -9,7 +9,9 @@ $thirdColor:#f00;
 		float:left;
 		font-size:$fontSize;
 		line-height:43px;
+		height:43px;
 		&:hover a{
+
 			color:$thirdColor;
 		}
 		a{
@@ -23,6 +25,14 @@ $thirdColor:#f00;
 	height:42px;border-bottom:1px solid #ddd;background:$mainColor;
 	.gps_l{
 		@extend %gps_l;
+		li:last-child{
+			overflow:hidden;width:414px;position:relative;
+			div{
+				position:absolute;
+				left:0px;
+				height:0px;
+			}
+		}
 	}
 }
 .gps_r{
@@ -245,7 +255,46 @@ $thirdColor:#f00;
 }
 .banner{
 	height:340px;
+	width:100%;
+	position:relative;
 	overflow:hidden;
+	ul{
+		position:absolute;
+		left:0px;
+		top:0px;
+		height:340px;
+		overflow:hidden;
+		width:100%;
+		li{
+			float:left;
+			height:340px;
+			overflow:hidden;
+			a{
+				display:block;
+				background-size:cover;
+				img{
+					width:1579px;
+					height:340px;
+					display:block;
+				}
+			}
+		}	
+	}
+	&>span{
+		display:block;position:absolute;left:0;top:50%;transform: translate(0,-50%);padding:50px 16px;background-color: rgba(0,0,0,0.5);color:#fff;
+	}
+	.btn-next{
+		left:auto;right:0;
+	}
+	.page{
+		position:absolute;right:50%;bottom:0;padding:10px;
+		span{
+			display:inline-block;margin:0 5px;width:30px;height:30px;line-height:30px;background-color:rgba(0,0,0,.6);text-align:center;color:#fff;border-radius: 50%;box-shadow:0 0 10px rgba(0,0,0,.5);
+		}
+		span.active{
+			background-color: rgba(255,0,0,.8)
+		}
+	}
 }
 .main{background:$mainColor;}
 %tv{font-size:24px;padding-left:10px;}
@@ -434,6 +483,9 @@ $thirdColor:#f00;
 			    background: #FFF;
 			    .daily_shop_list{
 				    position: relative;
+				    overflow:hidden;
+				    left:0px;
+				    top:0px;
 				    li{
 				        position: relative;
 					    float: left;
@@ -525,6 +577,7 @@ $thirdColor:#f00;
 }
 .global{
 	.global_list{
+		padding-left:106px;
 		padding-bottom: 30px;
 		li{
 			height:460px;

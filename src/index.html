@@ -5,7 +5,8 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/icon.css">
 	<link rel="stylesheet" href="css/index.css">
-	<script src="lib/jquery-3.3.1.min.js"></script>
+	<!-- <script src="lib/jquery-3.2.1.min.js"></script> -->
+	<script src="lib/common.js"></script>
 	<script src="js/page.js"></script>
 	<title>首页</title>
 </head>
@@ -20,8 +21,10 @@
 							<span>公告：</span>
 						</li>
 						<li>
-							<a href="">【注意】自主语音订购说明</a>
-							<!-- <p>【紧急通知】关于短信发送异常的问题已经得到解决</p> -->
+							<div class="test">
+								<a href="">【注意】自主语音订购说明</a>
+								<a href="">【紧急通知】关于短信发送异常的问题已经得到解决</a>
+							</div>
 						</li>
 					</ul>
 					<ul class="gps_r fr">
@@ -198,8 +201,9 @@
 			</nav>
 		</header>
 		<div class="banner">
-			<a href=""><img src="img/banner.jpg"></a>
-			<a href=""><img src="img/banner.jpg"></a>
+			<ul>
+				<li><a href=""><img src="img/banner.jpg"></a></li>
+			</ul>
 		</div>
 		
 		<main class="main">
@@ -372,10 +376,8 @@
 							<span class="live2">全球尖货</span>
 						</li>
 					</ul>
-					<div class="global_list clearfix">
-						<ul>
-						</ul>
-					</div>
+					<ul class="global_list clearfix">
+					</ul>
 				</div>
 			</div>
 		</main>
@@ -490,8 +492,8 @@
 						
 						<p class="side_login_btn">
 							<span>您好！请</span>
-							<a href="">登录</a>|
-							<a href="">注册</a>
+							<a href="html/login.html">登录</a>|
+							<a href="html/register.html">注册</a>
 						</p>
 						<p class="side_login_go">
 							<a href="">我的订单</a>
@@ -502,7 +504,7 @@
 				<li>
 					<i class="iconfont icon-buycar"></i>
 					<span class="buycarnum">0</span>
-					<p class="bat_side"><a href="">我的购物车</a></p>
+					<p class="bat_side"><a href="html/car.html">我的购物车</a></p>
 				</li>
 				<li>
 					<i class="iconfont icon-love"></i>
