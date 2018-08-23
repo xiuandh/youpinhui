@@ -8,14 +8,8 @@
 	<link rel="stylesheet" href="../css/index.css">
 	<link rel="stylesheet" href="../css/gooddetails.css">
 	<script src="../lib/jquery-3.3.1.min.js"></script>
-	<script>
-		jQuery($=>{
-			$('.header').load("../index.html #header");
-			$('.footer').load('../index.html .footer');
-			$('.side').load('../index.html .sidebar');
-			$('.sideout').load('../index.html .sideout');
-		})
-	</script>
+	<script src="../js/gooddetails.js"> </script>
+
 </head>
 <body>
 	<div class="header"></div>
@@ -40,10 +34,9 @@
 					</div>
 					<div class="jqzoom_scorll clearfix">
 						<ul class="items">
-								<li><img src="../img/zb2.jpg"></li>
-								<li><img src="../img/zb2.jpg"></li>
-								<li><img src="../img/zb2.jpg"></li>
-								<li><img src="../img/zb2.jpg"></li><li><img src="../img/zb2.jpg"></li>
+							<!-- <i class="iconfont icon-arrow ff"></i> -->
+								 <li><img src="../img/zb2.jpg"></li>
+							<!-- <i class="iconfont icon-arrow rr"></i> -->
 						</ul>
 					</div>
 					<div class="sh_goods_share clearfix">
@@ -59,19 +52,20 @@
 									已关注
 								</span>
 								<!-- 关注成功后 -->
-								<span class="tip concerns_tip">
+								<div class="tip concerns_tip">
 									<p>
+										<i class="jian"></i>
 										关注成功
 										<a href="">去我的关注查看</a>
 									</p>
-								</span>
+								</div>
 							</li>
 						</ul>
 					</div>
 				</div>
 				<div class="sh_goods_parameters fr">
 					<div class="brand">
-						<a href="" class="count_brand">珠宝</a>
+						<a href="#" class="count_brand"></a>
 						<h1 class="title">珠宝套组</h1>
 					</div>
 					<p class="description">
@@ -107,7 +101,7 @@
 							<span class="add fl">数量</span>
 							<p class="num fl clearfix">
 								<button class="num_dev fl">-</button>
-								<span class="num_num fl">1</span>
+								<input type="text" class="num_num fl" value="1">
 								<button class="num_add fl">+</button>
 							</p>
 						</div>
@@ -207,7 +201,7 @@
 										下一页
 										<i class="iconfont icon-arrow"></i>
 									</a>
-								</div>
+						</div>
 					</div>
 				</div>
 				<div class="watching fr">

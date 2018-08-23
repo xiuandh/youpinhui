@@ -8,14 +8,7 @@
 	<link rel="stylesheet" href="../css/index.css">
 	<link rel="stylesheet" href="../css/register.css">
 	<script src="../lib/jquery-3.3.1.min.js"></script>
-	<script>
-		jQuery($=>{
-			$('.header').load("../index.html .gps");
-			$('.footer').load('../index.html .footer');
-			$('.side').load('../index.html .sidebar');
-			$('.sideout').load('../index.html .sideout');
-		})
-	</script>
+	<script src="../js/register.js"></script>
 	<title></title>
 </head>
 <body>
@@ -50,7 +43,7 @@
 					<form action="">
 					<div class="item">
 						<label for="phone fl">手机号码:</label>
-						<input type="number" id="phone" class="tel">
+						<input type="number" id="phone" class="tel"><span class="telcheck"></span>
 					</div>
 					<div class="item item_code">
 						<label for="ma fl">验证码:</label>

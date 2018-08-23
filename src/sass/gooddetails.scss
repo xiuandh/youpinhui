@@ -42,6 +42,20 @@
 	    .jqzoom_scorll{
 	    	margin-top:20px;
 	    	padding:0 28px;
+	    	height:92px;
+	    	overflow:hidden;
+	    	position:relative;
+	    	i{
+	    		position:absolute;
+	    		top:34%;
+	    		font-size:34px;
+	    	}
+	    	.ff{
+	    		left:-4px;
+	    	}
+	    	.rr{
+	    		right:0px;
+	    	}
 	    	li{
 		    	float:left;
 		    	width:90px;
@@ -68,8 +82,26 @@
 		    			color:#f00;
 		    		}
 		    		&:last-child{
+		    			position:relative;
+
 		    			.tip{
 		    				display:none;
+		    				border: 1px solid orange;
+						    background: #e5c892;
+						    width: 183px;
+						    position: absolute;
+						    left: -70px;
+						    top: 26px;
+						    .jian{
+						    	display:block;
+						    	position: absolute;
+							    top: -13px;
+							    left: 70px;
+						    	width:0;
+						    	height:0;
+						    	border:6px solid transparent;
+						    	border-bottom-color:#f00;
+						    }
 		    			}
 		    		}
 		    	}
@@ -166,6 +198,7 @@
 				.num_num{
 					display:block;
 					width:72px;
+					height:38px;
 					text-align:center;
 					border-top:1px solid #ddd;border-bottom:1px solid #ddd;
 				}

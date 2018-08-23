@@ -11,7 +11,7 @@
 
 .gps .gps_l li:last-child { overflow: hidden; width: 414px; position: relative; }
 
-.gps .gps_l li:last-child div { position: absolute; left: 0px; height: 0px; }
+.gps .gps_l li:last-child div { position: absolute; left: 0px; top: 0px; height: 0px; }
 
 .gps_r li a span { padding: 0 10px; height: 18px; border-right: 1px solid #666; }
 
@@ -69,7 +69,7 @@
 
 .nav .container li:last-child { position: absolute; right: 0; top: 0; }
 
-.nav .container li:last-child .fllist { height: auto; width: 998px; display: none; padding-top: 1px; border: 1px solid #f70800; background-color: #fff; position: absolute; right: 0px; top: 40px; }
+.nav .container li:last-child .fllist { height: auto; width: 998px; display: none; padding-top: 1px; border: 1px solid #f70800; background-color: #fff; z-index: 1; position: absolute; right: 0px; top: 40px; }
 
 .nav .container li:last-child .fllist dl { float: left; padding-bottom: 10px; border-right: 1px solid #ddd; }
 
@@ -129,10 +129,10 @@
 
 .tv_live .tv_live_list li a span { padding-top: 44px; line-height: 40px; color: #f00; }
 
+.day_dis li:last-child .hours, .day_dis li:last-child .mins, .day_dis li:last-child .secs { background: #000; color: #fff; width: 20px; font-size: 20px; height: 20px; padding: 2px; margin-right: 4px; }
+
 /*今日限时购*/
 .day_dis li:last-child { font-size: 18px; }
-
-.day_dis li:last-child span { background: #000; color: #fff; width: 20px; font-size: 20px; height: 20px; padding: 2px; margin-right: 4px; }
 
 .day_dis .day_list { padding-top: 20px; }
 
@@ -150,7 +150,7 @@
 
 .day_dis .day_list .daily .daily_shop a img { width: 100%; }
 
-.day_dis .day_list .daily .daily_shop .daily_shop_tis { font-size: 26px; color: #f70800; padding-top: 10px; text-overflow: ellipsis; display: -webkit-box; }
+.day_dis .day_list .daily .daily_shop .daily_shop_tis { font-size: 26px; color: #f70800; padding-top: 10px; text-oerflow: ellipsis; display: -webkit-box; }
 
 .day_dis .day_list .daily .daily_shop .daily_shop_tt { font-size: 24px; color: #222; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; }
 

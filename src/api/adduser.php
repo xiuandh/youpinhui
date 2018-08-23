@@ -1,9 +1,8 @@
 <?php
 	include 'connect.php';
-	$username = isset($_GET['username'])?$_GET['username']:null;
-	$telphone = isset($_GET['telphone'])?$_GET['telphone']:null;
-	$userpad = isset($_GET['userpad'])?$_GET['userpad']:null;
-	$sql = "insert into user (username,password.telphone) values('$username','userpad','$telphone')";
+	$telphone = isset($_GET['telp'])?$_GET['telp']:null;
+	$userpad = isset($_GET['passw'])?$_GET['passw']:null;
+	$sql = "insert into user (password,telphone) values('$userpad','$telphone')";
 	//运行写入数据并返回数据
 	$return = $conn->query($sql);
 	if($return){

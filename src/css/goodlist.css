@@ -1,0 +1,55 @@
+.main_goodlist { padding-bottom: 18px; background: #eee; }
+
+.main_goodlist .classfity_menu { padding: 0 24px; background: #fff; }
+
+.main_goodlist .classfity_menu .menulist { padding: 0 120px 0px 200px; height: 130px; }
+
+.main_goodlist .classfity_menu .menulist .listsome { height: 130px; width: 86px; text-align: center; margin-right: 74px; }
+
+.main_goodlist .classfity_menu .menulist .listsome a { display: block; width: 86px; height: 90px; color: #222; position: relative; }
+
+.main_goodlist .classfity_menu .menulist .listsome a i { font-size: 50px; position: absolute; left: 18px; top: 12px; }
+
+.main_goodlist .classfity_menu .menulist .listsome span { margin-top: 4px; line-height: 20px; font-size: 18px; }
+
+.main_goodlist h1 { font-size: 38px; font-weight: 800; line-height: 124px; padding-left: 62px; position: relative; }
+
+.main_goodlist h1 i { position: absolute; left: 0px; top: 0px; color: #0f0; font-size: 50px; }
+
+.main_goodlist .list_con { padding-left: 15px; }
+
+.main_goodlist .list_con .quily_sear { margin: 13px 0px; }
+
+.main_goodlist .list_con .quily_sear li { float: left; font-size: 20px; line-height: 20px; }
+
+.main_goodlist .list_con .quily_sear li:hover span { background: #00bfcf; color: #fff; }
+
+.main_goodlist .list_con .quily_sear li span { text-align: center; padding: 0 8px; }
+
+.main_goodlist .list_con .quily_sear li.bd { border-right: 2px solid #000; }
+
+.main_goodlist .good_list { padding: 10px 24px 0 24px; }
+
+.main_goodlist .good_list li { float: left; width: 464px; margin-right: 18px; height: 652px; margin-bottom: 34px; border: 1px solid #ddd; }
+
+.main_goodlist .good_list li img { width: 100%; height: 464px; }
+
+.main_goodlist .good_list li .good_tit { height: 186px; padding: 0 48px 0 24px; background: #fff; }
+
+.main_goodlist .good_list li .good_tit h3 { font-size: 24px; line-height: 80px; font-weight: 600; }
+
+.main_goodlist .good_list li .good_tit .good_tip { margin-top: 48px; }
+
+.main_goodlist .good_list li .good_tit .good_tip .good_price { font-size: 30px; color: #222; }
+
+.main_goodlist .good_list li .good_tit .good_tip .good_count { font-size: 20px; color: #cec1c1e8; }
+
+.main_goodlist .good_list li .good_tit .good_tip .good_count em { color: #0f0; }
+
+.main_goodlist .comment .comment_page { margin-top: 10px; margin-right: 38px; margin-bottom: 46px; }
+
+.main_goodlist .comment .comment_page a { display: block; float: left; margin-right: 10px; text-align: center; border: 1px solid #e8e8e8; width: 22px; height: 22px; line-height: 22px; background: #fff; color: #666; }
+
+.main_goodlist .comment .comment_page a.active { background-color: #FF504A; border-color: #FF504A; color: #fff; }
+
+.main_goodlist .comment .comment_page .text { width: 86px; }

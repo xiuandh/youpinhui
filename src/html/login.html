@@ -9,16 +9,7 @@
 	<link rel="stylesheet" href="../css/register.css">
 	<link rel="stylesheet" href="../css/login.css">
 	<script src="../lib/jquery-3.3.1.min.js"></script>
-	<script>
-		jQuery($=>{
-			$('.header').load("../index.html .gps");
-			$('.footer').load('../index.html .footer');
-			$('.side').load('../index.html .sidebar');
-			$('.sideout').load('../index.html .sideout');
-			$('.land_logo').load('html/register.html .land_logo');
-			$('.regnav').load('html/register.html .regnav');
-		})
-	</script>
+	<script src="../js/login.js"></script>
 	<title></title>
 </head>
 <body>
@@ -71,6 +62,18 @@
 				</div>
 			</div>
 		</div>	
+	</div>
+	<!-- 用户名密码输入错误弹窗 -->
+	<div class="dialog">
+		<div class="dialogs login_exception">
+			<i class="btn_close">x</i>
+			<span class="dia_l_tt">
+				<i class="i">!</i>
+				<font class="error_msg">用户名或密码不正确</font>
+			</span>
+			<span>请拨打客服热线由客服人工进行处理</span>
+			<p class="pop_li_con">客服热线：40070707</p>
+		</div>
 	</div>
 	<div class="footer"></div>
 	<div class="sideout"></div>

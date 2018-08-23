@@ -16,7 +16,13 @@
 
 .sh_goods_key .sh_goods_gallery .preview .bqtv { background: rgba(0, 0, 0, 0) url(img/newbq.png) repeat scroll 0 -55px; height: 58px; left: 10px; position: absolute; top: 10px; width: 58px; }
 
-.sh_goods_key .sh_goods_gallery .jqzoom_scorll { margin-top: 20px; padding: 0 28px; }
+.sh_goods_key .sh_goods_gallery .jqzoom_scorll { margin-top: 20px; padding: 0 28px; height: 92px; overflow: hidden; position: relative; }
+
+.sh_goods_key .sh_goods_gallery .jqzoom_scorll i { position: absolute; top: 34%; font-size: 34px; }
+
+.sh_goods_key .sh_goods_gallery .jqzoom_scorll .ff { left: -4px; }
+
+.sh_goods_key .sh_goods_gallery .jqzoom_scorll .rr { right: 0px; }
 
 .sh_goods_key .sh_goods_gallery .jqzoom_scorll li { float: left; width: 90px; height: 90px; border: 1px solid #ddd; margin-right: 15px; }
 
@@ -32,7 +38,11 @@
 
 .sh_goods_key .sh_goods_gallery .sh_goods_share .baidu_share li i { color: #f00; }
 
-.sh_goods_key .sh_goods_gallery .sh_goods_share .baidu_share li:last-child .tip { display: none; }
+.sh_goods_key .sh_goods_gallery .sh_goods_share .baidu_share li:last-child { position: relative; }
+
+.sh_goods_key .sh_goods_gallery .sh_goods_share .baidu_share li:last-child .tip { display: none; border: 1px solid orange; background: #e5c892; width: 183px; position: absolute; left: -70px; top: 26px; }
+
+.sh_goods_key .sh_goods_gallery .sh_goods_share .baidu_share li:last-child .tip .jian { display: block; position: absolute; top: -13px; left: 70px; width: 0; height: 0; border: 6px solid transparent; border-bottom-color: #f00; }
 
 .sh_goods_key .sh_goods_parameters { width: 860px; }
 
@@ -72,7 +82,7 @@
 
 .sh_goods_key .sh_goods_parameters .choice_buy .buynum .num_dev { background: #F2F2F2; }
 
-.sh_goods_key .sh_goods_parameters .choice_buy .buynum .num_num { display: block; width: 72px; text-align: center; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+.sh_goods_key .sh_goods_parameters .choice_buy .buynum .num_num { display: block; width: 72px; height: 38px; text-align: center; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
 
 .sh_goods_key .sh_goods_parameters .add_cart { padding-left: 10px; }
 

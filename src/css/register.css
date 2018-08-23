@@ -7,13 +7,13 @@
 
 .land .land_logo { height: 112px; }
 
-.land .land_logo .land_logo_img { height: 57px; margin-top: 31px; }
+.land .land_logo .land_logo_img { height: 57px; margin-top: 31px; margin-left: -220px; }
 
 .land .land_logo .land_logo_img a { width: 200px; background: url("img/logo.png") no-repeat; }
 
 .land .land_logo .land_logo_img .reglogo { width: 168px; background: url("img/register.gif") no-repeat 0 0; }
 
-.land .land_logo .kefunum { color: #525252; padding-top: 70px; }
+.land .land_logo .kefunum { color: #525252; padding-top: 70px; margin-left: 220px; }
 
 .land .land_logo .kefunum a { color: #0089cf; }
 
