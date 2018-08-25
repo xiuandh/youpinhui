@@ -50,7 +50,7 @@
 
 .sh_goods_key .sh_goods_parameters .brand a { color: #666; display: block; height: 30px; line-height: 30px; padding-left: 10px; }
 
-.sh_goods_key .sh_goods_parameters .brand h1 { margin-bottom: 10px; width: 420px; color: #222; font-size: 30px; font-weight: 800px; line-height: 30px; }
+.sh_goods_key .sh_goods_parameters .brand h1 { margin-bottom: 10px; width: 420px; color: #222; font-size: 30px; font-weight: 800; line-height: 30px; }
 
 .sh_goods_key .sh_goods_parameters p { margin-bottom: 10px; color: #666; }
 
@@ -72,7 +72,29 @@
 
 .sh_goods_key .sh_goods_parameters .choice_buy .buy_t .add { width: 60px; }
 
-.sh_goods_key .sh_goods_parameters .choice_buy .buy_t input { width: 194px; height: 38px; border: 1px solid #ddd; margin-right: 15px; }
+.sh_goods_key .sh_goods_parameters .choice_buy .buy_t .input { width: 194px; text-align: center; height: 38px; border: 1px solid #ddd; margin-right: 15px; position: relative; }
+
+.sh_goods_key .sh_goods_parameters .choice_buy .buy_t .input:hover .content { display: block; }
+
+.sh_goods_key .sh_goods_parameters .choice_buy .buy_t .input:hover .tab_content:last-child { display: block; }
+
+.sh_goods_key .sh_goods_parameters .choice_buy .buy_t .input .content { display: none; z-index: 1; width: 338px; height: auto; position: absolute; border: 1px solid #ccc; background: #fff; left: -1px; top: 30px; }
+
+.sh_goods_key .sh_goods_parameters .choice_buy .buy_t .input .content .mt { height: 32px; border-bottom: 1px solid #ccc; }
+
+.sh_goods_key .sh_goods_parameters .choice_buy .buy_t .input .content .mt li { line-height: 32px; background: #fff; float: left; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 0 27px 0 15px; }
+
+.sh_goods_key .sh_goods_parameters .choice_buy .buy_t .input .content .mt li:hover em { color: #f00; }
+
+.sh_goods_key .sh_goods_parameters .choice_buy .buy_t .input .content .mt li:hover i { color: #f00; }
+
+.sh_goods_key .sh_goods_parameters .choice_buy .buy_t .input .content .mt .close { position: absolute; right: 14px; top: -6px; font-size: 18px; }
+
+.sh_goods_key .sh_goods_parameters .choice_buy .buy_t .input .content .tab_content { line-height: 26px; padding: 8px 15px; display: none; overflow: hidden; }
+
+.sh_goods_key .sh_goods_parameters .choice_buy .buy_t .input .content .tab_content li { width: 60px; float: left; }
+
+.sh_goods_key .sh_goods_parameters .choice_buy .buy_t .input .content .tab_content li:hover span { color: #f00; }
 
 .sh_goods_key .sh_goods_parameters .choice_buy .buy_t .yu { color: #f00; }
 

@@ -4,7 +4,6 @@ jQuery($=>{
 	$('.side').load('../index.html .sidebar');
 	$('.sideout').load('../index.html .sideout');
 	//检测电话号码是否已经注册
-	//
 	$('.tel').blur(function(){
 		var text = $('.tel').val();
 		$.ajax({
@@ -19,20 +18,35 @@ jQuery($=>{
 		})
 	});
 
-
-	$('.commit').on('click',function(){
+	$('.commit').on('click',function(e){
+		//表单验证输入信息是否正确
 		var tel = $('.tel').val();
-		console.log(tel);
+		if(!/^1[3-8]\d{9}$/.test(tel)){
+			alert('手机号码格式有误');
+			//清空并聚焦
+			$('.tel').val('');
+			$('.tel').focus();
+			return false;
+		}
 		var pass = $('.userpd').val();
-		console.log(pass);
-
+		var confirm = $('.userpdq').val();
+		if(pass != confirm){
+			alert('两次输入的密码不一致');
+			return false;
+		}
+		if(!$('.checkbox').is(':checked')){
+			return false;
+		}
+		//清除表单提交的默认行为
+		e.preventDefault();
 		$.ajax({
 			url:'../api/adduser.php',
-			type:'GET',
+			type:'POST',
 			data:{passw:pass,telp:tel},
 			success:function(datas){
+				console.log(datas);
 				if(datas === 'success'){
-					location.href = 'login.html';
+					window.location.href = 'html/login.html';
 				}
 			}
 		})

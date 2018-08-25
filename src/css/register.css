@@ -35,6 +35,8 @@
 
 .land .land_con .item input { width: 314px; height: 25px; line-height: 25px; padding: 5px 25px 5px 10px; border: 1px solid #a2a2a2; }
 
+.land .land_con .item span { margin-left: 10px; color: #f00; }
+
 .land .land_con .item_code .code_img { width: 89px; height: 30px; margin: 3px 5px 0; }
 
 .land .land_con .item_code em { line-height: 35px; }

@@ -11,7 +11,6 @@ $thirdColor:#f00;
 		line-height:43px;
 		height:43px;
 		&:hover a{
-
 			color:$thirdColor;
 		}
 		a{
@@ -171,6 +170,93 @@ $thirdColor:#f00;
 				    right: 16px;
 				    top: -2px;
 		    	}
+		    }
+		    &:hover .cart_info{display:block;}
+		    .cart_info{
+		        border: 1px solid #ddd;
+			    width: 288px;
+			    position: absolute;
+			    top: 29px;
+			    left: -150px;
+			    z-index:3;
+			    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+			    display: none;
+			    .cartList{
+			        padding: 10px 0 0;
+				    background-color: #fff;
+				    .carul{
+					    margin-left: 10px;
+					    height: 213px;
+					    overflow-y: auto;
+					    li{
+					    	border-bottom: 1px solid #eaeaea;
+						    &:hover a{background:#ddd;}
+						    a{
+						    	display: block;
+							    padding: 10px;
+							    height: 50px;
+							    .carting{
+							        float: left;
+								    width: 50px;
+								    height: 50px;
+								    margin-right: 10px;
+								    img{
+								    	width:100%;
+								    	height:100%;
+								    }
+								}
+							    .cartlink{
+							        width: 96px;
+								    float: left;
+								    color: #222;
+								    margin-right: 24px;
+								    line-height: 18px;
+								    margin-top: 5px;
+							    }
+							    .pricemx{
+							        padding-top: 6px;
+							        span{
+								        color: #f70800;
+									    font-size: 14px;
+							        }
+								}
+						    }
+					    }
+				    }
+				    .pricezj{
+					    background-color: #f0f0f0;
+					    font-size: 14px;
+					    height: 56px;
+					    line-height: 56px;
+					    padding-left: 12px;
+					    padding-right: 128px;
+					    position: relative;
+					    .canum{
+						    color: #f70800;
+						    font-weight: 700;
+					    }
+					    .cartotal{
+					    	color: #f70800;
+						    padding-left: 8px;
+						    em{
+						        font-size: 18px;
+							    font-weight: 700;
+						    }
+					    }
+					    .gosum{
+					    	width: 104px;
+						    height: 30px;
+						    line-height: 30px;
+						    text-align: center;
+						    color: #fff;
+						    position: absolute;
+						    right: 20px;
+						    top: 12px;
+						    background-color: #ff504a;
+						    border-radius: 5px;
+					    }
+				    }
+			    }
 		    }
 	    }
 

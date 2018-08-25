@@ -126,7 +126,7 @@
 			    width: 420px;
 			    color: #222;
 			    font-size: 30px;
-			    font-weight:800px;
+			    font-weight:800;
 			    line-height: 30px;
     		}
 		}
@@ -172,11 +172,57 @@
 				.add{
 					width:60px;
 				}
-				input{
+				.input{
 					width:194px;
+					text-align:center;
 					height:38px;
 					border:1px solid #ddd;
 					margin-right:15px;
+					position:relative;
+					&:hover .content{display:block;}
+					&:hover .tab_content:last-child{display:block;}
+					.content{
+						display:none;
+						z-index:1;
+						width: 338px;
+					    height: auto;
+					    position: absolute;
+					    border: 1px solid #ccc;
+					    background: #fff;
+					    left: -1px;
+					    top: 30px;
+					    .mt{
+					        height: 32px;
+    						border-bottom: 1px solid #ccc;
+    						li{
+    						    line-height: 32px;
+							    background: #fff;
+							    float: left;
+							    border-right: 1px solid #ccc;
+							    border-bottom: 1px solid #ccc;
+							    padding: 0 27px 0 15px;
+							    &:hover em{color:#f00;}
+							    &:hover i{color:#f00;}
+    						}
+    						.close{
+    							position:absolute;
+    							right:14px;
+    							top:-6px;
+    							font-size:18px;
+    						}
+					    }
+					    .tab_content{
+						    line-height: 26px;
+						    padding: 8px 15px;
+							display:none;
+						    overflow: hidden;
+						    li{
+						        width: 60px;
+    							float: left;
+    							&:hover span{color:#f00;}
+						    }
+					    }
+					}
 				}
 				.yu{
 					color:#f00;

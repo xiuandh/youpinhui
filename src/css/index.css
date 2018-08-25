@@ -59,6 +59,40 @@
 
 .logo .car .car-bag a .carnum { position: absolute; display: block; width: 18px; height: 16px; border-radius: 50%; line-height: 14px; text-align: center; color: #fff; background: #f00; overflow: hidden; right: 16px; top: -2px; }
 
+.logo .car .car-bag:hover .cart_info { display: block; }
+
+.logo .car .car-bag .cart_info { border: 1px solid #ddd; width: 288px; position: absolute; top: 29px; left: -150px; z-index: 3; box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); display: none; }
+
+.logo .car .car-bag .cart_info .cartList { padding: 10px 0 0; background-color: #fff; }
+
+.logo .car .car-bag .cart_info .cartList .carul { margin-left: 10px; height: 213px; overflow-y: auto; }
+
+.logo .car .car-bag .cart_info .cartList .carul li { border-bottom: 1px solid #eaeaea; }
+
+.logo .car .car-bag .cart_info .cartList .carul li:hover a { background: #ddd; }
+
+.logo .car .car-bag .cart_info .cartList .carul li a { display: block; padding: 10px; height: 50px; }
+
+.logo .car .car-bag .cart_info .cartList .carul li a .carting { float: left; width: 50px; height: 50px; margin-right: 10px; }
+
+.logo .car .car-bag .cart_info .cartList .carul li a .carting img { width: 100%; height: 100%; }
+
+.logo .car .car-bag .cart_info .cartList .carul li a .cartlink { width: 96px; float: left; color: #222; margin-right: 24px; line-height: 18px; margin-top: 5px; }
+
+.logo .car .car-bag .cart_info .cartList .carul li a .pricemx { padding-top: 6px; }
+
+.logo .car .car-bag .cart_info .cartList .carul li a .pricemx span { color: #f70800; font-size: 14px; }
+
+.logo .car .car-bag .cart_info .cartList .pricezj { background-color: #f0f0f0; font-size: 14px; height: 56px; line-height: 56px; padding-left: 12px; padding-right: 128px; position: relative; }
+
+.logo .car .car-bag .cart_info .cartList .pricezj .canum { color: #f70800; font-weight: 700; }
+
+.logo .car .car-bag .cart_info .cartList .pricezj .cartotal { color: #f70800; padding-left: 8px; }
+
+.logo .car .car-bag .cart_info .cartList .pricezj .cartotal em { font-size: 18px; font-weight: 700; }
+
+.logo .car .car-bag .cart_info .cartList .pricezj .gosum { width: 104px; height: 30px; line-height: 30px; text-align: center; color: #fff; position: absolute; right: 20px; top: 12px; background-color: #ff504a; border-radius: 5px; }
+
 .nav .container li a { display: block; padding: 0 20px; line-height: 40px; height: 40px; font-size: 15px; color: #fff; height: 40px; font-weight: 700; }
 
 .nav { background: #f00; }
