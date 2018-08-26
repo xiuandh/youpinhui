@@ -102,6 +102,8 @@
 
 .cart_sum .c_balance .c_count p .c_shu { font-weight: 800px; }
 
+.fixed_bt { position: fixed; left: 0; right: 0; bottom: 0; }
+
 .c_balance_bt { height: 50px; background-color: #f2f2f2; border-top: 1px solid #e8e8e8; }
 
 .c_balance_bt .b_check { padding: 17px 0 0 20px; }
@@ -111,3 +113,17 @@
 .c_balance_bt .b_del { color: #666; margin-left: 20px; margin-top: 18px; cursor: pointer; }
 
 .c_balance_bt .balance_bt { width: 160px; text-align: center; font-weight: bold; font-size: 18px; color: #fff; background-color: #ff504a; line-height: 50px; }
+
+.c_balance_bt .fixed_balance { float: right; margin-right: 30px; text-align: right; display: none; }
+
+.c_balance_bt .fixed_balance .fix_sum { margin: 5px 0 0 0; }
+
+.c_balance_bt .fixed_balance .fix_sum span { margin-left: 20px; }
+
+.c_balance_bt .fixed_balance .fix_sum .fix_price em { color: #f70800; margin: 0 3px; }
+
+.c_balance_bt .fixed_balance .sum_price { font-size: 14px; }
+
+.c_balance_bt .fixed_balance .sum_price .fix_b { font-weight: 800; }
+
+.c_balance_bt .fixed_balance .sum_price .c_paid { color: #f70800; font-size: 18px; }

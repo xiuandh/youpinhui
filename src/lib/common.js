@@ -240,69 +240,6 @@ var Cookie = {
 
 }
 
-// Cookie.get('username');//laoxie
-// Cookie.set('passowrd','123456',{path:'/'});//laoxie
-// Cookie.set('passowrd','abcd',{expires:now,path:'/',secure:true});//laoxie
-// Cookie.remove()
-
-
-// function animate(ele,attr,target){
-// 	// 避免多个属性时定时器覆盖
-// 	var timerName = attr + 'timer';
-
-// 	// 避免抖动
-// 	clearInterval(ele[timerName]);
-
-// 	ele[timerName] = setInterval(function(){
-// 		// 获取当前值
-// 		// var current = getComputedStyle(ele)[attr];
-// 		var current = getCss(ele,attr);//可能达到的值：200px,0.5,1,45deg,#1258bc
-
-// 		// 提取单位
-// 		var unit = current.match(/^([\d\.]+)([a-z]*)$/);//null
-
-// 		if(!unit){
-// 			// 如果得到null,意味动画无法进行，直接退出
-// 			clearInterval(ele.timer);
-// 			return;
-// 		}
-
-// 		// 提取值和单位
-// 		current = unit[1]*1;
-// 		unit = unit[2];
-
-// 		// 计算缓冲速度
-// 		var speed = (target-current)/10;//0.6->1，-0.6->-1
-
-// 		// speed不能为0
-// 		speed = speed<0 ? Math.floor(speed) : Math.ceil(speed);
-
-// 		// 针对opacity处理speed
-// 		if(attr === 'opacity'){
-// 			speed = speed<0 ? -0.05 : 0.05;
-// 		}
-
-// 		current += speed;
-
-// 		// 判断结束条件
-// 		if(current === target){
-// 			clearInterval(ele[timerName]);
-
-// 			// 重置目标值
-// 			current = target;
-// 		}
-
-// 		// 设置样式
-// 		ele.style[attr] = current + unit;
-// 	},30)
-// }
-
-
-
-// animate(item[i],'top',160)
-// animate(item[i],'top',5)
-
-
 function animate(ele,opt,callback){
 	// 记录属性数量
 	var timerLen = 0;

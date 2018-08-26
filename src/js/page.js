@@ -231,7 +231,7 @@ jQuery(function($){
 	//由登录页面跳转进来的首页，读取cookie，更改首页头部的名字
 	var userCookie = Cookie.get('username');
 	var user = JSON.parse(userCookie);
-	$('.gps_r li:first-child').find('span').text(user);
+	$('.gps_r li:first-child').find('span').text('欢迎您,'user);
 	$('.gps_r li:nth-child(2)').find('span').text('退出');
 	$('.gps_r li:nth-child(2) span').on('click',function(e){
 		Cookie.remove('username');

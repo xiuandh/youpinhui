@@ -233,4 +233,24 @@ jQuery($=>{
 		$('.storeprice em').text(totalprice);
 		$('.actualprice em').text(totalprice);
 	}
+
+	//点击图片或者文字，返回详情页
+	$('.c_meg').on('click','a',function(e){
+		var returnId = $(this).closest('.cart_form').attr('data-id');
+		location.href = 'html/gooddetails.html?id='+returnId;
+		e.preventDefault();
+	})
+
+	//吸底部效果
+    var balanceTop = $('.c_balance_bt').offset().top;   
+    $(document).on('scroll',function(){
+      	if($(document).scrollY() > balanceTop){
+           $('.c_balance_bt').addClass('fixed_bt');
+           $('.fixed_balance').show();
+	    }else{
+	       $('.c_balance_bt').removeClass('fixed_bt');
+	       $('.fixed_balance').hide();
+	    }
+  	})
+
 })
