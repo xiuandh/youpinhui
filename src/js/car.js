@@ -244,7 +244,7 @@ jQuery($=>{
 	//吸底部效果
     var balanceTop = $('.c_balance_bt').offset().top;   
     $(document).on('scroll',function(){
-      	if($(document).scrollY() > balanceTop){
+      	if($(document).scrollY() < balanceTop){
            $('.c_balance_bt').addClass('fixed_bt');
            $('.fixed_balance').show();
 	    }else{

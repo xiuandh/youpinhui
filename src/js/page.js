@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded',()=>{
 	// 头部轮播的动画效果
 	var li = document.querySelector('.gps_l li:last-child');
-	console.log(li);
+	// console.log(li);
 	let div = li.children[0];
 	// 无缝滚动关键1：把第一张复制到最后
 	div.appendChild(div.children[0].cloneNode(true));
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 		if(xhr.readyState === 4){
 			if(xhr.status === 200 || xhr.status === 304){
 				var data = JSON.parse(xhr.responseText);
-				console.log(data);
+				// console.log(data);
 				globalList.innerHTML = data.map(function(item){
 					return `<li data-id="${item.id}">
 						<div class="list_box">
@@ -185,7 +185,7 @@ jQuery(function($){
 		//活动时间
 		var end = new Date('2018-8-24 12:20:00');
 		var now = new Date();
-		console.log(now);
+		// console.log(now);
 		//转换为毫秒，比较差值
 		var offset = Date.parse(end) - Date.parse(now);
 		if(offset <= 0){
@@ -231,7 +231,7 @@ jQuery(function($){
 	//由登录页面跳转进来的首页，读取cookie，更改首页头部的名字
 	var userCookie = Cookie.get('username');
 	var user = JSON.parse(userCookie);
-	$('.gps_r li:first-child').find('span').text('欢迎您,'user);
+	$('.gps_r li:first-child').find('span').text('欢迎您，'+user);
 	$('.gps_r li:nth-child(2)').find('span').text('退出');
 	$('.gps_r li:nth-child(2) span').on('click',function(e){
 		Cookie.remove('username');
